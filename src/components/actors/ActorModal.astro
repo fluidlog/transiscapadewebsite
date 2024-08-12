@@ -1,0 +1,39 @@
+---
+import Modal from '../Modal.astro';
+import Themes from './Themes.astro';
+import Roles from './Roles.astro';
+import type { Actor } from '~/types';
+import { arrayOf } from '~/utils/utils';
+
+export interface Props {
+  actor: Actor;
+}
+
+const { actor } = Astro.props;
+---
+
+<Modal id={actor.id} title={actor['pair:label']}>
+  <img class="w-40 h-40 object-cover rounded-full" src={actor.image} alt={actor['pair:label']} />
+  {
+    actor['pair:comment'] && (
+      <p class="text-base leading-relaxed">
+        <strong>En 2 mots</strong>: {actor['pair:comment']}
+      </p>
+    )
+  }
+  {
+    actor['pair:hasTopic'] && (
+      <p class="text-base leading-relaxed">
+        <strong>Intérêts</strong>: <Themes themesUris={actor['pair:hasTopic']} />
+      </p>
+    )
+  }
+  {
+    actor['pair:actorOfMembership'] && (
+      <>
+        <p class="text-base leading-relaxed font-bold">Rôles</p>
+        <Roles associations={arrayOf(actor['pair:actorOfMembership'])} />
+      </>
+    )
+  }
+</Modal>

@@ -1,0 +1,3973 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "fr", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://virtual-assembly.org/ontologies/pair", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "http://virtual-assembly.org/ontologies/pair",
+    "comments" : {
+      "fr" : "Ontologie PAIR conforme au Modèle Sémantique des Concepts v3.01"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "197",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "151",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "154",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "181",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "224",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "74",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "145",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "137",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "223",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "237",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "139",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "136",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "238",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "184",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "152",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "114",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "240",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "106",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "256",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Floor",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Floor",
+      "en" : "Floor",
+      "fr" : "Etage"
+    },
+    "id" : "40",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#OrderedCollection",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An ordered collection of concepts, where both the grouping and the ordering are meaningful.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a 'node label'.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OrderedCollection",
+      "en" : "Ordered Collection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49",
+    "superClasses" : [ "50" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Document",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document",
+      "en" : "Document",
+      "fr" : "Document"
+    },
+    "id" : "78",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#GoodOrService",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GoodOrService",
+      "en" : "Good or Service",
+      "fr" : "Bien ou Service"
+    },
+    "subClasses" : [ "97", "6" ],
+    "comment" : { },
+    "id" : "96",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "List"
+    },
+    "attributes" : [ "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Project",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Project",
+      "en" : "Project",
+      "fr" : "Projet"
+    },
+    "comment" : {
+      "fr" : "Un projet est une action temporaire entreprise pour atteindre des objectifs définis."
+    },
+    "id" : "2",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#TangibleGood",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TangibleGood",
+      "en" : "Intangible Good",
+      "fr" : "Bien tangible"
+    },
+    "comment" : {
+      "fr" : "Biens ayant une réalité matérielle : Un vidéo-projecteur, un vélo par exemple"
+    },
+    "id" : "69",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Collection",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A meaningful collection of concepts.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Collection",
+      "en" : "Collection"
+    },
+    "subClasses" : [ "49" ],
+    "attributes" : [ "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Proposal",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Proposal",
+      "en" : "Proposal",
+      "undefined" : "Proposition"
+    },
+    "id" : "52",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#WhoSubject",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhoSubject",
+      "en" : "Who Subject"
+    },
+    "subClasses" : [ "1", "92" ],
+    "id" : "24",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Skill",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Skill",
+      "en" : "Skill",
+      "fr" : "Compétence"
+    },
+    "comment" : {
+      "fr" : "Aptitude d’une personne physique (voire d’une personne morale) dans un domaine particulier"
+    },
+    "id" : "102",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A set of concepts, optionally including statements about semantic relationships between those concepts.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A concept scheme may be defined to include concepts from different sources.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConceptScheme",
+      "en" : "Concept Scheme"
+    },
+    "attributes" : [ "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#WhenSubject",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhenSubject",
+      "en" : "When Subject"
+    },
+    "subClasses" : [ "143" ],
+    "comment" : {
+      "fr" : "Cette classe contient les instances ayant une composante temporelle; cependant ces instances peuvent avoir d'autres composantes, comme une composante spatiale. Un évènement (au sens commun du terme) se déroule à un moment donné dans un lieu donné."
+    },
+    "id" : "16",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Place",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place",
+      "en" : "Place",
+      "fr" : "Endroit"
+    },
+    "id" : "85",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Type",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Type",
+      "en" : "Type",
+      "fr" : "Type"
+    },
+    "subClasses" : [ "146", "67", "90" ],
+    "id" : "43",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#PlaceType",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlaceType",
+      "en" : "Place Type",
+      "fr" : "Type d'endroit"
+    },
+    "id" : "80",
+    "superClasses" : [ "26", "90" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#WhatSubject",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhatSubject",
+      "en" : "What Subject"
+    },
+    "subClasses" : [ "96", "102" ],
+    "id" : "33",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#IntangibleGood",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntangibleGood",
+      "en" : "Intangible Good",
+      "fr" : "Bien intangible"
+    },
+    "comment" : {
+      "undefined" : "<p style=\"margin-top: 0\">\n      Des biens n'yant pas vraiment de r&#233;alit&#233; mat&#233;rielle. Logiciels, \n      m&#233;thodologies par exemple. \n    </p>"
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Building",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building",
+      "en" : "Building",
+      "fr" : "Immeuble"
+    },
+    "id" : "71",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Organization",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "en" : "Organization",
+      "fr" : "Organisation"
+    },
+    "comment" : {
+      "fr" : "Organisation désigne un groupe d'individus s'étant rassemblés autour d'un objectif commun. Une organisation peut être formelle (structure juridique) ou informelle (groupe)."
+    },
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#BuildingItem",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingItem",
+      "en" : "Building Item",
+      "fr" : "Elément d'immeuble"
+    },
+    "subClasses" : [ "104", "71", "40" ],
+    "id" : "41",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#ConceptType",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptType",
+      "en" : "Concept type",
+      "fr" : "Type de concept"
+    },
+    "id" : "146",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An idea or notion; a unit of thought.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Concept",
+      "en" : "Concept"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#WhereSubject",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhereSubject",
+      "fr" : "Where Subject"
+    },
+    "subClasses" : [ "77", "80", "85", "87", "41" ],
+    "id" : "26",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#SubjectType",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubjectType",
+      "en" : "Subject type",
+      "fr" : "Type de sujet"
+    },
+    "subClasses" : [ "80", "92" ],
+    "id" : "90",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#MiscSubject",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MiscSubject",
+      "en" : "Event"
+    },
+    "id" : "35",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Room",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Room",
+      "en" : "Room",
+      "fr" : "Pièce"
+    },
+    "id" : "104",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Thema",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Thema",
+      "en" : "Topic",
+      "fr" : "Thème"
+    },
+    "comment" : {
+      "fr" : "Thème réfère à ce dont on parle, au sujet qui nous anime. Les thèmes rassemblent les notions, les concepts, les centres d'intérêts, les \"tags\"."
+    },
+    "id" : "155",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Address",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Address",
+      "en" : "Address",
+      "fr" : "Adresse"
+    },
+    "id" : "77",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#ObjectType",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectType",
+      "en" : "Types applicable to objects for \"loose typing\"",
+      "fr" : "Type d'objet"
+    },
+    "subClasses" : [ "66" ],
+    "id" : "67",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Good",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Good",
+      "en" : "Good",
+      "fr" : "Bien"
+    },
+    "subClasses" : [ "69", "5" ],
+    "id" : "6",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#DocumentType",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DocumentType",
+      "en" : "Document Type",
+      "fr" : "Type de document"
+    },
+    "id" : "66",
+    "superClasses" : [ "62", "67" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Service",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service",
+      "en" : "Service",
+      "fr" : "Service"
+    },
+    "comment" : {
+      "fr" : "Un service est une prestation qui consiste en « la mise à disposition d'une capacité physique, technique ou intellectuelle"
+    },
+    "id" : "97",
+    "superClasses" : [ "96" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "96", "85", "143" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "197"
+  }, {
+    "instances" : 0,
+    "union" : [ "77", "71", "40" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "151"
+  }, {
+    "instances" : 0,
+    "union" : [ "52", "85", "1", "2", "143" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Person",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person",
+      "fr" : "Individu"
+    },
+    "comment" : {
+      "undefined" : "(...)"
+    },
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "96", "85", "143" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Subject",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Subject",
+      "en" : "Subject",
+      "undefined" : "Sujet"
+    },
+    "subClasses" : [ "13", "16", "24", "26", "31", "33", "35" ],
+    "comment" : {
+      "undefined" : "Classe abstraite permettant de regrouper les classes directement concernées par le domaine de connaissance de l'ontologie PAIR"
+    },
+    "id" : "14",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Town",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Town",
+      "en" : "Town",
+      "fr" : "Ville"
+    },
+    "id" : "87",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#HowSubject",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HowSubject",
+      "en" : "How Subject"
+    },
+    "subClasses" : [ "2" ],
+    "id" : "31",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Object",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object",
+      "en" : "Object",
+      "fr" : "Objet"
+    },
+    "subClasses" : [ "78", "66" ],
+    "comment" : {
+      "fr" : "Classe abstraite permettant de regrouper les classes destinées à la gestion des documents relatifs aux sujets de l'ontologie PAIR"
+    },
+    "id" : "62",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "158",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "236",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "176",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#WhySubject",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhySubject",
+      "en" : "Why Subject"
+    },
+    "subClasses" : [ "52" ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "50", "18" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "181"
+  }, {
+    "instances" : 0,
+    "union" : [ "77", "71", "40" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "224"
+  }, {
+    "instances" : 0,
+    "union" : [ "96", "85", "102" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Concept",
+    "equivalent" : [ "18" ],
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "subClasses" : [ "43", "155" ],
+    "attributes" : [ "equivalent" ],
+    "id" : "145",
+    "superClasses" : [ "44" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "96", "85", "102" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "137"
+  }, {
+    "instances" : 0,
+    "union" : [ "104", "40", "87" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "223"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#OrganizationType",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrganizationType",
+      "en" : "Organization Type",
+      "fr" : "Type d'organisation"
+    },
+    "comment" : {
+      "fr" : "Type d'organisation permet de caractériser les organisations : Par exemple, Entreprise / SARL ou Association ..."
+    },
+    "id" : "92",
+    "superClasses" : [ "24", "90" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "96", "85", "102" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "134"
+  }, {
+    "instances" : 0,
+    "union" : [ "96", "85", "102" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "237"
+  }, {
+    "instances" : 0,
+    "union" : [ "85", "143", "9" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "139"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "2" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "136"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "2" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "238"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Event",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "fr" : "Evèvement"
+    },
+    "comment" : {
+      "fr" : "Un événement est ici une manifestation organisée par des personnes et / ou des organisations, qui se déroule à un certain endroit, à un certain moment."
+    },
+    "id" : "143",
+    "superClasses" : [ "16" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "52", "85", "1", "2", "143" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "177"
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "96" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "38"
+  }, {
+    "instances" : 0,
+    "union" : [ "85", "143", "9" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "184"
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "96" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "113"
+  }, {
+    "instances" : 0,
+    "union" : [ "104", "40", "87" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "152"
+  }, {
+    "instances" : 0,
+    "union" : [ "104", "41" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "37"
+  }, {
+    "instances" : 0,
+    "union" : [ "104", "41" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#Personality",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Personality",
+      "en" : "Personnality",
+      "fr" : "Agent"
+    },
+    "subClasses" : [ "8", "9" ],
+    "id" : "1",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "171",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "240",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "174",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "106",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "206",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "149",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "56",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#PairEntity",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PairEntity",
+      "en" : "Pair entity",
+      "fr" : "Entité Pair"
+    },
+    "subClasses" : [ "62", "14", "145" ],
+    "comment" : {
+      "fr" : "Classe abstraite ayant pour unique rôle de définir des propriétes communes à l'ensemble des classes de l'ontologie PAIR"
+    },
+    "id" : "44"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "226",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "196",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "216",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "256",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "175",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "186",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "187",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "188",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "189",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "190",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "191",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "192",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "193",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "194",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "195",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "198",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "200",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "202",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "203",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "204",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "205",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "207",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "208",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "209",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "210",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "211",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "201",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "217",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "218",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "219",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "220",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "221",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "222",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "225",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "227",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "228",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "229",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "230",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "231",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "232",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "233",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "234",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "235",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "239",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "245",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "249",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "250",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "251",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "252",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "253",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "254",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "255",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "257",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "258",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "259",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "260",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#manages",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "manages",
+      "en" : "manages",
+      "fr" : "gère"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasResponsible",
+    "inverse" : "10",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasResponsible",
+      "en" : "has responsible",
+      "fr" : "à pour responsable"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#semanticRelation",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a concept to a concept related by meaning.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "This property should not be used directly, but as a super-property for all properties denoting a relationship of meaning between concepts.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "semanticRelation",
+      "en" : "is in semantic relation with"
+    },
+    "domain" : "18",
+    "subproperty" : [ "19", "20", "21", "22" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "14",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "14",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#employedBy",
+    "inverse" : "28",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "employedBy",
+      "en" : "employed by",
+      "fr" : "employé par"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "range" : "14",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "14",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "14",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hosts",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hosts",
+      "en" : "hosts",
+      "fr" : "héberge"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#typeOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "typeOf",
+      "en" : "type of",
+      "fr" : "type de"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "43",
+    "subproperty" : [ "46", "47", "48" ],
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#brainstorms",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "brainstorms",
+      "en" : "brainstorms",
+      "fr" : "imagine"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#concretizedBy",
+    "inverse" : "54",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "concretizedBy",
+      "en" : "concretized by",
+      "fr" : "concrétisé par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "52",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
+    "inverse" : "57",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a concept to a concept that is more specific in meaning.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "narrower",
+      "en" : "has narrower"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "56",
+    "subproperty" : [ "58" ],
+    "comment" : {
+      "en" : "Narrower concepts are typically rendered as children in a concept hierarchy (tree)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#alternativeLabel",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "alternativeLabel",
+      "en" : "alternative label",
+      "fr" : "libellé alternatif"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#interObjectProperty",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "interObjectProperty"
+    },
+    "domain" : "62",
+    "subproperty" : [ "63", "64" ],
+    "comment" : {
+      "fr" : "Relie les Objects entre eux"
+    },
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "range" : "67",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "6",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "41",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "41",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#offeredBy",
+    "inverse" : "75",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "offeredBy",
+      "en" : "offered by",
+      "undefined" : "proposé par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "74",
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "range" : "26",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "26",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#representedBy",
+    "inverse" : "82",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "representedBy",
+      "en" : "represented by",
+      "fr" : "représenté par"
+    },
+    "superproperty" : [ "83" ],
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "range" : "26",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "26",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "26",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "90",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "90",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#related",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a concept to a concept with which there is an associative semantic relationship.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "related",
+      "en" : "has related"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "56",
+    "subproperty" : [ "93" ],
+    "comment" : {
+      "en" : "skos:related is disjoint with skos:broaderTransitive"
+    },
+    "attributes" : [ "external", "object", "symmetric" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#comment",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "comment",
+      "en" : "comment",
+      "fr" : "commentaire"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#references",
+    "inverse" : "63",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "references",
+      "en" : "references",
+      "fr" : "rérérence"
+    },
+    "superproperty" : [ "61" ],
+    "domain" : "78",
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "range" : "33",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "43",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "33",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "41",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#inScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "107",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a resource (for example a concept) to a concept scheme in which it is included.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A concept may be a member of more than one concept scheme.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inScheme",
+      "en" : "is in scheme"
+    },
+    "domain" : "106",
+    "subproperty" : [ "108" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+    "inverse" : "108",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTopConcept",
+      "en" : "has top concept"
+    },
+    "domain" : "107",
+    "attributes" : [ "external", "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#aboutPage",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "aboutPage",
+      "en" : "about page",
+      "fr" : "page \"à propos de\""
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hostedIn",
+    "inverse" : "36",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "hostedIn",
+      "en" : "hosted in",
+      "fr" : "hébergé dans"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "113",
+    "attributes" : [ "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#partnerOf",
+    "inverse" : "115",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "partnerOf"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "8",
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#concretizes",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "concretizes",
+      "en" : "concretizes",
+      "fr" : "concrétise"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "exactMatch",
+      "en" : "has exact match"
+    },
+    "superproperty" : [ "117" ],
+    "domain" : "56",
+    "comment" : {
+      "en" : "skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch."
+    },
+    "attributes" : [ "external", "object", "symmetric", "transitive" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#zipCode",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "119",
+    "label" : {
+      "IRI-based" : "zipCode",
+      "en" : "zip code",
+      "fr" : "code postal"
+    },
+    "domain" : "87",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#interSubjectProperty",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "interSubjectProperty"
+    },
+    "domain" : "14",
+    "subproperty" : [ "29", "120", "121", "122", "36", "123", "124", "125", "51", "53", "3", "112", "126", "54", "115", "127", "73", "11", "128", "129", "130", "131", "132", "133", "75" ],
+    "comment" : {
+      "fr" : "Relie les Subjects entre eux"
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#employs",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "employs",
+      "en" : "employs",
+      "fr" : "emploie"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#offers",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "offers",
+      "en" : "offers",
+      "fr" : "propose"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#involves",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "involves",
+      "en" : "involves",
+      "fr" : "implique"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "2",
+    "subproperty" : [ "135" ],
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#needs",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "needs",
+      "en" : "needs",
+      "fr" : "nécessite"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "136",
+    "attributes" : [ "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broadMatch",
+    "inverse" : "58",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "broadMatch",
+      "en" : "has broader match"
+    },
+    "superproperty" : [ "57", "22" ],
+    "domain" : "56",
+    "attributes" : [ "external", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#localizes",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "localizes",
+      "en" : "localizes",
+      "fr" : "localise"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "77",
+    "attributes" : [ "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#documents",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "documents",
+      "en" : "documents",
+      "fr" : "documente"
+    },
+    "superproperty" : [ "141" ],
+    "domain" : "78",
+    "subproperty" : [ "82" ],
+    "comment" : {
+      "en" : "Indicates that a document \"somehow documents\" a business subject, e.g. a brochure \"documents\" the company it is about."
+    },
+    "attributes" : [ "object" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#operates",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "operates",
+      "en" : "operates",
+      "fr" : "exploite"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#deliveredBy",
+    "inverse" : "130",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "deliveredBy",
+      "en" : "delivered by",
+      "fr" : "délivré par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "142",
+    "attributes" : [ "object" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasConceptType",
+    "inverse" : "48",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "hasConceptType"
+    },
+    "superproperty" : [ "147" ],
+    "domain" : "145",
+    "comment" : {
+      "en" : "Links a Concept to a ConceptType, for \"loose typing\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#notation",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "149",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "By convention, skos:notation is used with a typed literal in the object position of the triple.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "notation",
+      "en" : "notation"
+    },
+    "domain" : "56",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasSubjectType",
+    "inverse" : "46",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "hasSubjectType"
+    },
+    "superproperty" : [ "147" ],
+    "domain" : "14",
+    "comment" : {
+      "en" : "Links a Subject to a SubjectType, for \"loose typing\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#typeOfSubject",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "typeOfSubject"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "90",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasPart",
+    "inverse" : "128",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "152",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "en" : "has part",
+      "fr" : "à pour partie"
+    },
+    "superproperty" : [ "39" ],
+    "cardinality" : "1",
+    "domain" : "151",
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#knows",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "knows",
+      "en" : "knows",
+      "fr" : "connais"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#documentedBy",
+    "inverse" : "140",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "documentedBy",
+      "en" : "documented by",
+      "fr" : "documenté par"
+    },
+    "superproperty" : [ "141" ],
+    "domain" : "14",
+    "subproperty" : [ "81" ],
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#relatedMatch",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "relatedMatch",
+      "en" : "has related match"
+    },
+    "superproperty" : [ "21", "22" ],
+    "domain" : "56",
+    "attributes" : [ "external", "object", "symmetric" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasInterest",
+    "inverse" : "156",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "155",
+    "label" : {
+      "IRI-based" : "hasInterest",
+      "en" : "has interest",
+      "fr" : "à pour intérêt"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "154",
+    "attributes" : [ "object" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#e-mail",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "158",
+    "label" : {
+      "IRI-based" : "e-mail",
+      "en" : "e-mail",
+      "fr" : "mel"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "107",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a concept to the concept scheme that it is a top level concept of.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "topConceptOf",
+      "en" : "is top concept in scheme"
+    },
+    "superproperty" : [ "105" ],
+    "domain" : "18",
+    "attributes" : [ "external", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "44",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "13",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "145",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#memberOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "memberOf",
+      "en" : "member of",
+      "fr" : "membre de"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "162"
+  }, {
+    "range" : "145",
+    "domain" : "155",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#description",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "description",
+      "fr" : "description"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "164"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "44",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "44",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrowMatch",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "narrowMatch",
+      "en" : "has narrower match"
+    },
+    "superproperty" : [ "55", "22" ],
+    "domain" : "56",
+    "attributes" : [ "external", "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#lastName",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "171",
+    "label" : {
+      "IRI-based" : "lastName",
+      "en" : "family name",
+      "fr" : "nom de famille"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#memberList",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "98",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates an ordered collection to the RDF list containing its members.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "memberList",
+      "en" : "has member list"
+    },
+    "domain" : "49",
+    "comment" : {
+      "en" : "For any resource, every item in the list given as the value of the\n      skos:memberList property is also a value of the skos:member property."
+    },
+    "attributes" : [ "external", "functional", "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#firstName",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "174",
+    "label" : {
+      "IRI-based" : "firstName",
+      "en" : "first name",
+      "fr" : "prénom"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#endDate",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "176",
+    "label" : {
+      "IRI-based" : "endDate",
+      "en" : "end date",
+      "fr" : "date de fin"
+    },
+    "domain" : "143",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#interestOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "177",
+    "label" : {
+      "IRI-based" : "interestOf",
+      "en" : "interest of",
+      "fr" : "centre d'intérêt de"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "155",
+    "attributes" : [ "object" ],
+    "id" : "156"
+  }, {
+    "range" : "31",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "62",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#member",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "181",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a collection to one of its members.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "member",
+      "en" : "has member"
+    },
+    "domain" : "50",
+    "attributes" : [ "external", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "62",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#manages",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "manages",
+      "en" : "manages",
+      "fr" : "gère"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#localizedBy",
+    "inverse" : "125",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "localizedBy",
+      "en" : "localized by",
+      "fr" : "localisé par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "184",
+    "attributes" : [ "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#typeOfObject",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "typeOfObject"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "67",
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#affiliatedBy",
+    "inverse" : "11",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "affiliatedBy",
+      "en" : "affiliated by",
+      "fr" : "affilié par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "9",
+    "subproperty" : [ "162", "27", "10" ],
+    "attributes" : [ "object", "allValues" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#localizedBy",
+    "inverse" : "125",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "localizedBy",
+      "en" : "localized by",
+      "fr" : "localisé par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#knowedBy",
+    "inverse" : "124",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "knowedBy",
+      "en" : "knowed by",
+      "fr" : "connu par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#knows",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "knows",
+      "en" : "knows",
+      "fr" : "connais"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#employedBy",
+    "inverse" : "28",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "employedBy",
+      "en" : "employed by",
+      "fr" : "employé par"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#responsibleOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "responsibleOf",
+      "en" : "responsible of",
+      "fr" : "responsable de"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#partnerOf",
+    "inverse" : "115",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "partnerOf"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "8",
+    "attributes" : [ "object", "allValues", "symmetric" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasMember",
+    "inverse" : "162",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasMember",
+      "en" : "has member",
+      "fr" : "à pour membre"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "8",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#memberOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "memberOf",
+      "en" : "member of",
+      "fr" : "membre de"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "9",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#typeOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "typeOf",
+      "en" : "type of",
+      "fr" : "type de"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "92",
+    "subproperty" : [ "46", "47", "48" ],
+    "attributes" : [ "object", "allValues" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#label",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "196",
+    "label" : {
+      "IRI-based" : "label",
+      "en" : "label",
+      "fr" : "libellé"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#referencesBy",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "referencesBy",
+      "en" : "referenced by",
+      "fr" : "référencé par"
+    },
+    "superproperty" : [ "61" ],
+    "domain" : "78",
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#delivers",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "197",
+    "label" : {
+      "IRI-based" : "delivers",
+      "en" : "delivers",
+      "fr" : "delivre"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#affiliates",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "affiliates",
+      "en" : "affiliate",
+      "fr" : "affilie"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "8",
+    "subproperty" : [ "7", "199", "28" ],
+    "attributes" : [ "object", "allValues" ],
+    "id" : "198"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasType",
+    "inverse" : "42",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasType",
+      "en" : "has type",
+      "fr" : "à pour type"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "8",
+    "subproperty" : [ "201", "144", "150" ],
+    "attributes" : [ "object", "allValues" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#employs",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "employs",
+      "en" : "employs",
+      "fr" : "emploie"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "8",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hostedIn",
+    "inverse" : "36",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "hostedIn",
+      "en" : "hosted in",
+      "fr" : "hébergé dans"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "96",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#deliveredBy",
+    "inverse" : "130",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "deliveredBy",
+      "en" : "delivered by",
+      "fr" : "délivré par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "96",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "204"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#homePage",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "206",
+    "label" : {
+      "IRI-based" : "homePage",
+      "en" : "home page",
+      "fr" : "page \"de référence\""
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "205"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasResponsible",
+    "inverse" : "10",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasResponsible",
+      "en" : "has responsible",
+      "fr" : "à pour responsable"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "8",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "207"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hostedIn",
+    "inverse" : "36",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hostedIn",
+      "en" : "hosted in",
+      "fr" : "hébergé dans"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "8",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#localizedBy",
+    "inverse" : "125",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "localizedBy",
+      "en" : "localized by",
+      "fr" : "localisé par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "143",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#partOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "fr" : "partie de"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "40",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "210"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasPart",
+    "inverse" : "128",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "en" : "has part",
+      "fr" : "à pour partie"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "40",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#affiliatedBy",
+    "inverse" : "11",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "affiliatedBy",
+      "en" : "affiliated by",
+      "fr" : "affilié par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "9",
+    "subproperty" : [ "162", "27", "10" ],
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasObjectType",
+    "inverse" : "47",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "hasObjectType"
+    },
+    "superproperty" : [ "147" ],
+    "domain" : "62",
+    "comment" : {
+      "en" : "Links an Object to an ObjectType, for \"loose typing\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "closeMatch",
+      "en" : "has close match"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "56",
+    "subproperty" : [ "116" ],
+    "attributes" : [ "external", "object", "symmetric" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#represents",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "represents",
+      "en" : "represents",
+      "fr" : "représente"
+    },
+    "superproperty" : [ "140" ],
+    "domain" : "78",
+    "comment" : {
+      "en" : "Indicates that an document \"strongly denotes\" a business subject, e.g. an invoice \"represents\" a commercial deal."
+    },
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#involvedIn",
+    "inverse" : "120",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "involvedIn",
+      "en" : "involved in",
+      "fr" : "impliqué dans"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "1",
+    "subproperty" : [ "0" ],
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "range" : "107",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "18",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "107",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#webPage",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "216",
+    "label" : {
+      "IRI-based" : "webPage",
+      "en" : "web page",
+      "fr" : "page web"
+    },
+    "domain" : "56",
+    "attributes" : [ "datatype" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#representedBy",
+    "inverse" : "82",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "representedBy",
+      "en" : "represented by",
+      "fr" : "représenté par"
+    },
+    "superproperty" : [ "83" ],
+    "domain" : "14",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "217"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#partOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "fr" : "partie de"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "104",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#partOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "fr" : "partie de"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "87",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "219"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#documentedBy",
+    "inverse" : "140",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "documentedBy",
+      "en" : "documented by",
+      "fr" : "documenté par"
+    },
+    "superproperty" : [ "141" ],
+    "domain" : "14",
+    "subproperty" : [ "81" ],
+    "attributes" : [ "object", "allValues" ],
+    "id" : "220"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#concretizedBy",
+    "inverse" : "54",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "concretizedBy",
+      "en" : "concretized by",
+      "fr" : "concrétisé par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "52",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#concretizes",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "concretizes",
+      "en" : "concretizes",
+      "fr" : "concrétise"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "2",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "222"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#partOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "224",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "fr" : "partie de"
+    },
+    "superproperty" : [ "39" ],
+    "cardinality" : "1",
+    "domain" : "223",
+    "attributes" : [ "object" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#brainstormedBy",
+    "inverse" : "51",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "brainstormedBy",
+      "en" : "brainstormed by",
+      "fr" : "imaginé par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "52",
+    "attributes" : [ "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#phone",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "226",
+    "label" : {
+      "IRI-based" : "phone",
+      "en" : "phone",
+      "fr" : "téléphone"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#typeOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "typeOf",
+      "en" : "type of",
+      "fr" : "type de"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "80",
+    "subproperty" : [ "46", "47", "48" ],
+    "attributes" : [ "object", "allValues" ],
+    "id" : "227"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#neededBy",
+    "inverse" : "123",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "neededBy",
+      "en" : "needed by",
+      "fr" : "nécessité par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "85",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "228"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#deliveredBy",
+    "inverse" : "130",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "deliveredBy",
+      "en" : "delivered by",
+      "fr" : "délivré par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "85",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "229"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasType",
+    "inverse" : "42",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasType",
+      "en" : "has type",
+      "fr" : "à pour type"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "85",
+    "subproperty" : [ "201", "144", "150" ],
+    "attributes" : [ "object", "allValues" ],
+    "id" : "230"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#localizedBy",
+    "inverse" : "125",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "localizedBy",
+      "en" : "localized by",
+      "fr" : "localisé par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "85",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#involvedIn",
+    "inverse" : "120",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "involvedIn",
+      "en" : "involved in",
+      "fr" : "impliqué dans"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "1",
+    "subproperty" : [ "0" ],
+    "attributes" : [ "object", "allValues" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#operates",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "operates",
+      "en" : "operates",
+      "fr" : "exploite"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "1",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#offeredBy",
+    "inverse" : "75",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "offeredBy",
+      "en" : "offered by",
+      "undefined" : "proposé par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "85",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "234"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#brainstorms",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "brainstorms",
+      "en" : "brainstorms",
+      "fr" : "imagine"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "1",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "235"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasType",
+    "inverse" : "42",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasType",
+      "en" : "has type",
+      "fr" : "à pour type"
+    },
+    "superproperty" : [ "45" ],
+    "cardinality" : "1",
+    "domain" : "44",
+    "subproperty" : [ "201", "144", "150" ],
+    "attributes" : [ "object" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+    "inverse" : "19",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "skos:broaderTransitive is a transitive superproperty of skos:broader.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "By convention, skos:broaderTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "broaderTransitive",
+      "en" : "has broader transitive"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "56",
+    "subproperty" : [ "57" ],
+    "attributes" : [ "external", "object", "transitive" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broader",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a concept to a concept that is more general in meaning.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "broader",
+      "en" : "has broader"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "56",
+    "subproperty" : [ "138" ],
+    "comment" : {
+      "en" : "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#objectSubjectProperty",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "objectSubjectProperty"
+    },
+    "domain" : "56",
+    "subproperty" : [ "83", "140" ],
+    "comment" : {
+      "fr" : "Relie les Subjects et les Objects"
+    },
+    "attributes" : [ "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#managedBy",
+    "inverse" : "0",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "managedBy",
+      "en" : "managed by",
+      "fr" : "géré par"
+    },
+    "superproperty" : [ "120" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#operatedBy",
+    "inverse" : "126",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "operatedBy",
+      "en" : "operated by",
+      "fr" : "exploité par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "85",
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#preferedLabel",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "240",
+    "label" : {
+      "IRI-based" : "preferedLabel",
+      "en" : "prefered label",
+      "fr" : "libellé préféré"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "239"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#typeOfConcept",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "typeOfConcept"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "146",
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#knowedBy",
+    "inverse" : "124",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "knowedBy",
+      "en" : "knowed by",
+      "fr" : "connu par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#neededBy",
+    "inverse" : "123",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "238",
+    "label" : {
+      "IRI-based" : "neededBy",
+      "en" : "needed by",
+      "fr" : "nécessité par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "237",
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#mappingRelation",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mappingRelation",
+      "en" : "is in mapping relation with"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "56",
+    "subproperty" : [ "117", "93", "58", "138" ],
+    "comment" : {
+      "en" : "These concept mapping relations mirror semantic relations, and the data model defined below is similar (with the exception of skos:exactMatch) to the data model defined for semantic relations. A distinct vocabulary is provided for concept mapping relations, to provide a convenient way to differentiate links within a concept scheme from links between concept schemes. However, this pattern of usage is not a formal requirement of the SKOS data model, and relies on informal definitions of best practice."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "16",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
+  }, {
+    "range" : "24",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "43",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "243"
+  }, {
+    "range" : "43",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "244"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasMember",
+    "inverse" : "162",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasMember",
+      "en" : "has member",
+      "fr" : "à pour membre"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "199"
+  }, {
+    "range" : "96",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "245"
+  }, {
+    "range" : "24",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "50",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hosts",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hosts",
+      "en" : "hosts",
+      "fr" : "héberge"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "41",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasType",
+    "inverse" : "42",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasType",
+      "en" : "has type",
+      "fr" : "à pour type"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "78",
+    "subproperty" : [ "201", "144", "150" ],
+    "attributes" : [ "object", "allValues" ],
+    "id" : "249"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#represents",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "represents",
+      "en" : "represents",
+      "fr" : "représente"
+    },
+    "superproperty" : [ "140" ],
+    "domain" : "78",
+    "comment" : {
+      "en" : "Indicates that an document \"strongly denotes\" a business subject, e.g. an invoice \"represents\" a commercial deal."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "250"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#referencesBy",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "referencesBy",
+      "en" : "referenced by",
+      "fr" : "référencé par"
+    },
+    "superproperty" : [ "61" ],
+    "domain" : "78",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "251"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#references",
+    "inverse" : "63",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "references",
+      "en" : "references",
+      "fr" : "rérérence"
+    },
+    "superproperty" : [ "61" ],
+    "domain" : "78",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "252"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#documents",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "documents",
+      "en" : "documents",
+      "fr" : "documente"
+    },
+    "superproperty" : [ "141" ],
+    "domain" : "78",
+    "subproperty" : [ "82" ],
+    "comment" : {
+      "en" : "Indicates that a document \"somehow documents\" a business subject, e.g. a brochure \"documents\" the company it is about."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "253"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#typeOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "typeOf",
+      "en" : "type of",
+      "fr" : "type de"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "66",
+    "subproperty" : [ "46", "47", "48" ],
+    "attributes" : [ "object", "allValues" ],
+    "id" : "254"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#startDate",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "256",
+    "label" : {
+      "IRI-based" : "startDate",
+      "en" : "start date",
+      "fr" : "date de départ"
+    },
+    "domain" : "143",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "255"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#deliveredBy",
+    "inverse" : "130",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "deliveredBy",
+      "en" : "delivered by",
+      "fr" : "délivré par"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "143",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "257"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasPart",
+    "inverse" : "128",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "en" : "has part",
+      "fr" : "à pour partie"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "77",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "258"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#hasPart",
+    "inverse" : "128",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "en" : "has part",
+      "fr" : "à pour partie"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "71",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "259"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#identifier",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "236",
+    "label" : {
+      "IRI-based" : "identifier",
+      "en" : "identifier",
+      "fr" : "identifiant"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "260"
+  }, {
+    "range" : "96",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "261"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#responsibleOf",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "responsibleOf",
+      "en" : "responsible of",
+      "fr" : "responsable de"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#affiliates",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "affiliates",
+      "en" : "affiliate",
+      "fr" : "affilie"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "8",
+    "subproperty" : [ "7", "199", "28" ],
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://virtual-assembly.org/ontologies/pair#entityConceptProperties",
+    "baseIri" : "http://virtual-assembly.org/ontologies/pair",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "entityConceptProperties"
+    },
+    "domain" : "56",
+    "subproperty" : [ "153", "156", "147", "42" ],
+    "comment" : {
+      "fr" : "Relie les PairEntity aux Concepts"
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "skos:narrowerTransitive is a transitive superproperty of skos:narrower.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "By convention, skos:narrowerTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "narrowerTransitive",
+      "en" : "has narrower transitive"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "56",
+    "subproperty" : [ "55" ],
+    "attributes" : [ "external", "object", "transitive" ],
+    "id" : "19"
+  } ]
+}

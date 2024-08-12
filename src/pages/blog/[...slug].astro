@@ -1,0 +1,28 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import SinglePost from '~/components/blog/SinglePost.astro';
+import ToBlogLink from '~/components/blog/ToBlogLink.astro';
+import dataProvider from '~/config/dataProvider';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const { data: posts } = await dataProvider.getList('BlogPost');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: post,
+  }));
+}
+
+const post = Astro.props;
+
+const metadata = {
+  title: post['pair:label'],
+  description: post['pair:comment'],
+};
+---
+
+<Layout metadata={metadata}>
+  <SinglePost post={post} />
+  <ToBlogLink />
+</Layout>

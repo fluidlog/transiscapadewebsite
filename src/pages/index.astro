@@ -1,0 +1,153 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FeaturedProjects from '~/components/projects/FeaturedProjects.astro';
+
+const metadata = {
+  title:
+    'Assemblée Virtuelle — Favoriser la mise en réseau des acteurs de la transition grâce à la mise en synergie de leurs systèmes d’information.',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero />
+
+  <Note />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Nos projets"
+    subtitle="L'association Assemblée Virtuelle fédère un écosystème d'acteurs développant ensemble des communs au service de la transition"
+    items={[
+      {
+        title: 'Applications sémantiques & pair à pair',
+        description: 'Logiciels de cartographie, réseaux sociaux, outils collaboratifs',
+        icon: 'flat-color-icons:template',
+        callToAction: {
+          text: 'Voir les projets',
+          href: '/projets/applications',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Vocabulaires génériques et métiers',
+        description: "Pour permettre l'interopérabilité des systèmes d'information",
+        icon: 'flat-color-icons:gallery',
+        callToAction: {
+          text: 'Voir les projets',
+          href: '/projets/ontologies',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Méthodologies de collaboration',
+        description: "Reposant sur les principes de l'open-source et du pair à pair",
+        icon: 'flat-color-icons:approval',
+        callToAction: {
+          text: 'Voir les projets',
+          href: '/projets/methodologies',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Innovation sociale et écologique',
+        description: "Co-développement de projets s'inscrivant dans la transition",
+        icon: 'flat-color-icons:document',
+        link: '/projets/innovations-sociales',
+        callToAction: {
+          text: 'Voir les projets',
+          href: '/projets/innovations-sociales',
+          variant: 'link',
+        },
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <FeaturedProjects
+    title="Les solutions logicielles de l'écosystème"
+    subtitle="Les logiciels développés ou promus dans le cadre de l’Assemblée Virtuelle ont vocation à favoriser le développement d’écosystèmes logiciels, de systèmes d’information décentralisés et fédérés, au service de l’autonomie et de la mise en réseau de leurs communautés d’utilisateurs."
+    callToAction={{
+      variant: 'primary',
+      text: 'Tous les projets logiciels',
+      href: '/projets/applications',
+      icon: 'tabler:arrow-right',
+    }}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <Features2
+    title="Nos moyens d'action"
+    columns={3}
+    items={[
+      {
+        title: 'Recherche-action',
+        description:
+          'Autour des architectures distribuées (technologies, méthodologies au service des organisations en réseau)',
+        icon: 'tabler:settings-search',
+      },
+      {
+        title: 'Sensibilisation & essaimage',
+        description:
+          "Partage des technologies et méthodologies sous license libre, animation d'une communauté apprenante, organisation d'événements",
+        icon: 'tabler:arrows-maximize',
+      },
+      {
+        title: 'Prestation de services',
+        description: "En collaboration avec nos organisations membres, qui reversent une contribution à l'association",
+        icon: 'tabler:users',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <BlogLatestPosts title="Derniers articles" />
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Forum de discussion',
+        href: 'https://forums.assemblee-virtuelle.org',
+        target: '_blank',
+        icon: 'tabler:message',
+      },
+    ]}
+  >
+    <Fragment slot="title">Rejoignez notre communauté !</Fragment>
+    <Fragment slot="subtitle">
+      Notre forum de discussion est l'espace de prédilection pour interragir avec notre communauté. N'hésitez pas à vous
+      inscrire, cela vous permettra de recevoir un récap hebdomadaire avec les messages les plus populaires.
+    </Fragment>
+    <Fragment slot="bg">
+      <div
+        class="bg-cover w-full h-[740px] flex items-center justify-center"
+        style="background-image: url('/hero.jpg');"
+      >
+      </div>
+    </Fragment>
+  </CallToAction>
+</Layout>

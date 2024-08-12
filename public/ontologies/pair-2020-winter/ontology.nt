@@ -1,0 +1,1572 @@
+<http://virtual-assembly.org/ontologies/pair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://virtual-assembly.org/ontologies/pair> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<http://virtual-assembly.org/ontologies/pair> <http://www.w3.org/2000/01/rdf-schema#comment> "PAIR Summer 2020 Release - Work in Progress"@fr .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://virtual-assembly.org/ontologies/pair#about
+<http://virtual-assembly.org/ontologies/pair#about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#about> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#about> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Idea> .
+<http://virtual-assembly.org/ontologies/pair#about> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#activityOfInvolvement
+<http://virtual-assembly.org/ontologies/pair#activityOfInvolvement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#activityOfInvolvement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#associationProperties> .
+<http://virtual-assembly.org/ontologies/pair#activityOfInvolvement> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#involvementActivity> .
+<http://virtual-assembly.org/ontologies/pair#activityOfInvolvement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#activityOfInvolvement> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> .
+# 
+# http://virtual-assembly.org/ontologies/pair#actorOfInvolvement
+<http://virtual-assembly.org/ontologies/pair#actorOfInvolvement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#actorOfInvolvement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#associationProperties> .
+<http://virtual-assembly.org/ontologies/pair#actorOfInvolvement> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#involvementActor> .
+<http://virtual-assembly.org/ontologies/pair#actorOfInvolvement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#actorOfInvolvement> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> .
+# 
+# http://virtual-assembly.org/ontologies/pair#actorOfMembership
+<http://virtual-assembly.org/ontologies/pair#actorOfMembership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#actorOfMembership> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#associationProperties> .
+<http://virtual-assembly.org/ontologies/pair#actorOfMembership> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#actorOfMembership> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#MembershipAssociation> .
+# 
+# http://virtual-assembly.org/ontologies/pair#affiliatedBy
+<http://virtual-assembly.org/ontologies/pair#affiliatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#affiliatedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#affiliatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#affiliates> .
+<http://virtual-assembly.org/ontologies/pair#affiliatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Person> .
+<http://virtual-assembly.org/ontologies/pair#affiliatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Organization> .
+<http://virtual-assembly.org/ontologies/pair#affiliatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "affiliated by"@en .
+<http://virtual-assembly.org/ontologies/pair#affiliatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "affilié par"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#affiliates
+<http://virtual-assembly.org/ontologies/pair#affiliates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#affiliates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#affiliates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Organization> .
+<http://virtual-assembly.org/ontologies/pair#affiliates> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Person> .
+<http://virtual-assembly.org/ontologies/pair#affiliates> <http://www.w3.org/2000/01/rdf-schema#label> "affiliate"@en .
+<http://virtual-assembly.org/ontologies/pair#affiliates> <http://www.w3.org/2000/01/rdf-schema#label> "affilie"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#agentResourceProperty
+<http://virtual-assembly.org/ontologies/pair#agentResourceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#agentResourceProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#agentResourceProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Catégorie de propriétés reliant un Agent à une Ressource"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#aimedBy
+<http://virtual-assembly.org/ontologies/pair#aimedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#aimedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#pairIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#aimedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#aims> .
+<http://virtual-assembly.org/ontologies/pair#aimedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Finality> .
+<http://virtual-assembly.org/ontologies/pair#aimedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+# 
+# http://virtual-assembly.org/ontologies/pair#aims
+<http://virtual-assembly.org/ontologies/pair#aims> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#aims> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#pairIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#aims> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+<http://virtual-assembly.org/ontologies/pair#aims> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Finality> .
+# 
+# http://virtual-assembly.org/ontologies/pair#allowedBy
+<http://virtual-assembly.org/ontologies/pair#allowedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#allowedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#allowedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#allows> .
+<http://virtual-assembly.org/ontologies/pair#allowedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Finality> .
+<http://virtual-assembly.org/ontologies/pair#allowedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Means> .
+# 
+# http://virtual-assembly.org/ontologies/pair#allows
+<http://virtual-assembly.org/ontologies/pair#allows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#allows> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#allows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Means> .
+<http://virtual-assembly.org/ontologies/pair#allows> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Finality> .
+# 
+# http://virtual-assembly.org/ontologies/pair#assignedTo
+<http://virtual-assembly.org/ontologies/pair#assignedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#assignedTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#involves> .
+<http://virtual-assembly.org/ontologies/pair#assignedTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#assigneeOf> .
+<http://virtual-assembly.org/ontologies/pair#assignedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Task> .
+<http://virtual-assembly.org/ontologies/pair#assignedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#assignedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Sens plus fort que \"involves\" pour les responsables de tâches"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#assigneeOf
+<http://virtual-assembly.org/ontologies/pair#assigneeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#assigneeOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#involvedIn> .
+<http://virtual-assembly.org/ontologies/pair#assigneeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#assigneeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Task> .
+<http://virtual-assembly.org/ontologies/pair#assigneeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Sens plus fort que \"involved in\" pour les responsables de tâches"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#associationProperties
+<http://virtual-assembly.org/ontologies/pair#associationProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#associationProperties> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#associationProperties> <http://www.w3.org/2000/01/rdf-schema#comment> "Catégorie de propriétés utilisées pour structurer des Associations"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#basedOn
+<http://virtual-assembly.org/ontologies/pair#basedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#basedOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#basedOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#concretizedBy> .
+<http://virtual-assembly.org/ontologies/pair#basedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#basedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Idea> .
+<http://virtual-assembly.org/ontologies/pair#basedOn> <http://www.w3.org/2000/01/rdf-schema#label> "concretizes"@en .
+<http://virtual-assembly.org/ontologies/pair#basedOn> <http://www.w3.org/2000/01/rdf-schema#label> "concrétise"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#brainstormedBy
+<http://virtual-assembly.org/ontologies/pair#brainstormedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#brainstormedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#brainstormedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#brainstorms> .
+<http://virtual-assembly.org/ontologies/pair#brainstormedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Idea> .
+<http://virtual-assembly.org/ontologies/pair#brainstormedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#brainstormedBy> <http://www.w3.org/2000/01/rdf-schema#label> "brainstormed by"@en .
+<http://virtual-assembly.org/ontologies/pair#brainstormedBy> <http://www.w3.org/2000/01/rdf-schema#label> "imaginé par"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#brainstorms
+<http://virtual-assembly.org/ontologies/pair#brainstorms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#brainstorms> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#brainstorms> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#brainstorms> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Idea> .
+<http://virtual-assembly.org/ontologies/pair#brainstorms> <http://www.w3.org/2000/01/rdf-schema#label> "brainstorms"@en .
+<http://virtual-assembly.org/ontologies/pair#brainstorms> <http://www.w3.org/2000/01/rdf-schema#label> "imagine"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#branchOf
+<http://virtual-assembly.org/ontologies/pair#branchOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#branchOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> .
+<http://virtual-assembly.org/ontologies/pair#branchOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#hasBranch> .
+<http://virtual-assembly.org/ontologies/pair#branchOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Branch> .
+<http://virtual-assembly.org/ontologies/pair#branchOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#challengeOf
+<http://virtual-assembly.org/ontologies/pair#challengeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#challengeOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#pairIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#challengeOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#hasChallenge> .
+<http://virtual-assembly.org/ontologies/pair#challengeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Challenge> .
+<http://virtual-assembly.org/ontologies/pair#challengeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+# 
+# http://virtual-assembly.org/ontologies/pair#concernedBy
+<http://virtual-assembly.org/ontologies/pair#concernedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#concernedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#concernedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#concerns> .
+<http://virtual-assembly.org/ontologies/pair#concernedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#concernedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Task> .
+# 
+# http://virtual-assembly.org/ontologies/pair#concerns
+<http://virtual-assembly.org/ontologies/pair#concerns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#concerns> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#concerns> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Task> .
+<http://virtual-assembly.org/ontologies/pair#concerns> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+# 
+# http://virtual-assembly.org/ontologies/pair#concretizedBy
+<http://virtual-assembly.org/ontologies/pair#concretizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#concretizedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#concretizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Idea> .
+<http://virtual-assembly.org/ontologies/pair#concretizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#concretizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "concretized by"@en .
+<http://virtual-assembly.org/ontologies/pair#concretizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "concrétisé par"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#consumedBy
+<http://virtual-assembly.org/ontologies/pair#consumedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#consumedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#agentResourceProperty> .
+<http://virtual-assembly.org/ontologies/pair#consumedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#consumes> .
+<http://virtual-assembly.org/ontologies/pair#consumedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#consumedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Agent> .
+# 
+# http://virtual-assembly.org/ontologies/pair#consumes
+<http://virtual-assembly.org/ontologies/pair#consumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#consumes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#agentResourceProperty> .
+<http://virtual-assembly.org/ontologies/pair#consumes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Agent> .
+<http://virtual-assembly.org/ontologies/pair#consumes> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Resource> .
+# 
+# http://virtual-assembly.org/ontologies/pair#containedIn
+<http://virtual-assembly.org/ontologies/pair#containedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#containedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#containedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#contains> .
+<http://virtual-assembly.org/ontologies/pair#containedIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Document> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Folder> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://virtual-assembly.org/ontologies/pair#containedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Folder> .
+# 
+# http://virtual-assembly.org/ontologies/pair#contains
+<http://virtual-assembly.org/ontologies/pair#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#contains> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Folder> .
+<http://virtual-assembly.org/ontologies/pair#contains> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Document> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Folder> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://virtual-assembly.org/ontologies/pair#cooperatesWith
+<http://virtual-assembly.org/ontologies/pair#cooperatesWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#cooperatesWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#cooperatesWith> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#cooperatesWith> .
+<http://virtual-assembly.org/ontologies/pair#cooperatesWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://virtual-assembly.org/ontologies/pair#cooperatesWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Project> .
+<http://virtual-assembly.org/ontologies/pair#cooperatesWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Project> .
+# 
+# http://virtual-assembly.org/ontologies/pair#documentedBy
+<http://virtual-assembly.org/ontologies/pair#documentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#documentedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#objectSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#documentedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#documents> .
+<http://virtual-assembly.org/ontologies/pair#documentedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#documentedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Object> .
+<http://virtual-assembly.org/ontologies/pair#documentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "documented by"@en .
+<http://virtual-assembly.org/ontologies/pair#documentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "documenté par"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#documents
+<http://virtual-assembly.org/ontologies/pair#documents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#documents> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#objectSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#documents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Object> .
+<http://virtual-assembly.org/ontologies/pair#documents> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#documents> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a document \"somehow documents\" a business subject, e.g. a brochure \"documents\" the company it is about."@en .
+<http://virtual-assembly.org/ontologies/pair#documents> <http://www.w3.org/2000/01/rdf-schema#label> "documente"@fr .
+<http://virtual-assembly.org/ontologies/pair#documents> <http://www.w3.org/2000/01/rdf-schema#label> "documents"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#domainOf
+<http://virtual-assembly.org/ontologies/pair#domainOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#domainOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> .
+<http://virtual-assembly.org/ontologies/pair#domainOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#hasDomain> .
+<http://virtual-assembly.org/ontologies/pair#domainOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Domain> .
+<http://virtual-assembly.org/ontologies/pair#domainOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#entityConceptProperty
+<http://virtual-assembly.org/ontologies/pair#entityConceptProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://virtual-assembly.org/ontologies/pair#extendedBy
+<http://virtual-assembly.org/ontologies/pair#extendedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#extendedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#extendedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#extends> .
+<http://virtual-assembly.org/ontologies/pair#extendedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Sector> .
+<http://virtual-assembly.org/ontologies/pair#extendedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Branch> .
+# 
+# http://virtual-assembly.org/ontologies/pair#extends
+<http://virtual-assembly.org/ontologies/pair#extends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#extends> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#extends> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Branch> .
+<http://virtual-assembly.org/ontologies/pair#extends> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Sector> .
+# 
+# http://virtual-assembly.org/ontologies/pair#follows
+<http://virtual-assembly.org/ontologies/pair#follows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#follows> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#follows> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#hasFollower> .
+<http://virtual-assembly.org/ontologies/pair#follows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#follows> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#follows> <http://www.w3.org/2000/01/rdf-schema#label> "connu par"@fr .
+<http://virtual-assembly.org/ontologies/pair#follows> <http://www.w3.org/2000/01/rdf-schema#label> "knowed by"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasActivityField
+<http://virtual-assembly.org/ontologies/pair#hasActivityField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasActivityField> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> .
+<http://virtual-assembly.org/ontologies/pair#hasActivityField> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#hasActivityField> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#ActivityField> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasBranch
+<http://virtual-assembly.org/ontologies/pair#hasBranch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasBranch> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> .
+<http://virtual-assembly.org/ontologies/pair#hasBranch> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#hasBranch> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Branch> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasChallenge
+<http://virtual-assembly.org/ontologies/pair#hasChallenge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasChallenge> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#pairIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasChallenge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+<http://virtual-assembly.org/ontologies/pair#hasChallenge> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Challenge> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasConceptType
+<http://virtual-assembly.org/ontologies/pair#hasConceptType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasConceptType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#hasType> .
+<http://virtual-assembly.org/ontologies/pair#hasConceptType> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#typeOfConcept> .
+<http://virtual-assembly.org/ontologies/pair#hasConceptType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Concept> .
+<http://virtual-assembly.org/ontologies/pair#hasConceptType> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#ConceptType> .
+<http://virtual-assembly.org/ontologies/pair#hasConceptType> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Concept to a ConceptType, for \"loose typing\"."@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasDomain
+<http://virtual-assembly.org/ontologies/pair#hasDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasDomain> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> .
+<http://virtual-assembly.org/ontologies/pair#hasDomain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#hasDomain> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Domain> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasFollower
+<http://virtual-assembly.org/ontologies/pair#hasFollower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasFollower> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasFollower> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#hasFollower> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#hasFollower> <http://www.w3.org/2000/01/rdf-schema#label> "connais"@fr .
+<http://virtual-assembly.org/ontologies/pair#hasFollower> <http://www.w3.org/2000/01/rdf-schema#label> "knows"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasInspired
+<http://virtual-assembly.org/ontologies/pair#hasInspired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasInspired> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasInspired> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#inspiredBy> .
+<http://virtual-assembly.org/ontologies/pair#hasInspired> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#hasInspired> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasLocation
+<http://virtual-assembly.org/ontologies/pair#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasLocation> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#locationOf> .
+<http://virtual-assembly.org/ontologies/pair#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+<http://virtual-assembly.org/ontologies/pair#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Place> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasObjectType
+<http://virtual-assembly.org/ontologies/pair#hasObjectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasObjectType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#hasType> .
+<http://virtual-assembly.org/ontologies/pair#hasObjectType> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#typeOfObject> .
+<http://virtual-assembly.org/ontologies/pair#hasObjectType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Object> .
+<http://virtual-assembly.org/ontologies/pair#hasObjectType> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#ObjectType> .
+<http://virtual-assembly.org/ontologies/pair#hasObjectType> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an Object to an ObjectType, for \"loose typing\"."@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasOrigin
+<http://virtual-assembly.org/ontologies/pair#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasOrigin> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#originOf> .
+<http://virtual-assembly.org/ontologies/pair#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Finality> .
+<http://virtual-assembly.org/ontologies/pair#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Challenge> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasPart
+<http://virtual-assembly.org/ontologies/pair#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#partOf> .
+<http://virtual-assembly.org/ontologies/pair#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasPostalAddress
+<http://virtual-assembly.org/ontologies/pair#hasPostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasPostalAddress> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasPostalAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PhysicalPlace> .
+<http://virtual-assembly.org/ontologies/pair#hasPostalAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#PostalAddress> .
+<http://virtual-assembly.org/ontologies/pair#hasPostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "adresse postale"@fr .
+<http://virtual-assembly.org/ontologies/pair#hasPostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "postal address"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasSector
+<http://virtual-assembly.org/ontologies/pair#hasSector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasSector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> .
+<http://virtual-assembly.org/ontologies/pair#hasSector> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#sectorOf> .
+<http://virtual-assembly.org/ontologies/pair#hasSector> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#hasSector> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Sector> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasSkill
+<http://virtual-assembly.org/ontologies/pair#hasSkill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasSkill> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasSkill> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Person> .
+<http://virtual-assembly.org/ontologies/pair#hasSkill> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Skill> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasStatus
+<http://virtual-assembly.org/ontologies/pair#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#entityConceptProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Status> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasSubactivity
+<http://virtual-assembly.org/ontologies/pair#hasSubactivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasSubactivity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#hasPart> .
+<http://virtual-assembly.org/ontologies/pair#hasSubactivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#hasSubactivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Activity> .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasSubjectType
+<http://virtual-assembly.org/ontologies/pair#hasSubjectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasSubjectType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#hasType> .
+<http://virtual-assembly.org/ontologies/pair#hasSubjectType> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#typeOfSubject> .
+<http://virtual-assembly.org/ontologies/pair#hasSubjectType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#hasSubjectType> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#SubjectType> .
+<http://virtual-assembly.org/ontologies/pair#hasSubjectType> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Subject to a SubjectType, for \"loose typing\"."@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasTopic
+<http://virtual-assembly.org/ontologies/pair#hasTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasTopic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#entityConceptProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasTopic> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#topicOf> .
+<http://virtual-assembly.org/ontologies/pair#hasTopic> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Object> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Subject> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://virtual-assembly.org/ontologies/pair#hasTopic> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Theme> .
+<http://virtual-assembly.org/ontologies/pair#hasTopic> <http://www.w3.org/2000/01/rdf-schema#label> "has interest"@en .
+<http://virtual-assembly.org/ontologies/pair#hasTopic> <http://www.w3.org/2000/01/rdf-schema#label> "à pour intérêt"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#hasType
+<http://virtual-assembly.org/ontologies/pair#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#entityConceptProperty> .
+<http://virtual-assembly.org/ontologies/pair#hasType> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#typeOf> .
+<http://virtual-assembly.org/ontologies/pair#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Type> .
+<http://virtual-assembly.org/ontologies/pair#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "has type"@en .
+<http://virtual-assembly.org/ontologies/pair#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "à pour type"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#hostedIn
+<http://virtual-assembly.org/ontologies/pair#hostedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hostedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#hasLocation> .
+<http://virtual-assembly.org/ontologies/pair#hostedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#hosts> .
+<http://virtual-assembly.org/ontologies/pair#hostedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+<http://virtual-assembly.org/ontologies/pair#hostedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Place> .
+<http://virtual-assembly.org/ontologies/pair#hostedIn> <http://www.w3.org/2000/01/rdf-schema#label> "hosted in"@en .
+<http://virtual-assembly.org/ontologies/pair#hostedIn> <http://www.w3.org/2000/01/rdf-schema#label> "hébergé dans"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#hosts
+<http://virtual-assembly.org/ontologies/pair#hosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#hosts> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#locationOf> .
+<http://virtual-assembly.org/ontologies/pair#hosts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Place> .
+<http://virtual-assembly.org/ontologies/pair#hosts> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+<http://virtual-assembly.org/ontologies/pair#hosts> <http://www.w3.org/2000/01/rdf-schema#label> "hosts"@en .
+<http://virtual-assembly.org/ontologies/pair#hosts> <http://www.w3.org/2000/01/rdf-schema#label> "héberge"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#inspiredBy
+<http://virtual-assembly.org/ontologies/pair#inspiredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#inspiredBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#inspiredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#inspiredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#intendedBy
+<http://virtual-assembly.org/ontologies/pair#intendedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#intendedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#intendedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#intends> .
+<http://virtual-assembly.org/ontologies/pair#intendedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Sector> .
+<http://virtual-assembly.org/ontologies/pair#intendedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Domain> .
+# 
+# http://virtual-assembly.org/ontologies/pair#intends
+<http://virtual-assembly.org/ontologies/pair#intends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#intends> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#intends> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Domain> .
+<http://virtual-assembly.org/ontologies/pair#intends> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Sector> .
+# 
+# http://virtual-assembly.org/ontologies/pair#interIntentionProperty
+<http://virtual-assembly.org/ontologies/pair#interIntentionProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#interIntentionProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#interIntentionProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Catégorie de propriétés reliant des intentions entre elles"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#interObjectProperty
+<http://virtual-assembly.org/ontologies/pair#interObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#interObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Object> .
+<http://virtual-assembly.org/ontologies/pair#interObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Object> .
+<http://virtual-assembly.org/ontologies/pair#interObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relie les Objects entre eux"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#interSubjectProperty
+<http://virtual-assembly.org/ontologies/pair#interSubjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#interSubjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#interSubjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#interSubjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relie les Subjects entre eux"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#involvedIn
+<http://virtual-assembly.org/ontologies/pair#involvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#involvedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#involvedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#involves> .
+<http://virtual-assembly.org/ontologies/pair#involvedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#involvedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#involvedIn> <http://www.w3.org/2000/01/rdf-schema#label> "impliqué dans"@fr .
+<http://virtual-assembly.org/ontologies/pair#involvedIn> <http://www.w3.org/2000/01/rdf-schema#label> "involved in"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#involvementActivity
+<http://virtual-assembly.org/ontologies/pair#involvementActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#involvementActivity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#associationProperties> .
+<http://virtual-assembly.org/ontologies/pair#involvementActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> .
+<http://virtual-assembly.org/ontologies/pair#involvementActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Activity> .
+# 
+# http://virtual-assembly.org/ontologies/pair#involvementActor
+<http://virtual-assembly.org/ontologies/pair#involvementActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#involvementActor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#associationProperties> .
+<http://virtual-assembly.org/ontologies/pair#involvementActor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> .
+<http://virtual-assembly.org/ontologies/pair#involvementActor> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+# 
+# http://virtual-assembly.org/ontologies/pair#involvementRole
+<http://virtual-assembly.org/ontologies/pair#involvementRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#involvementRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> .
+<http://virtual-assembly.org/ontologies/pair#involvementRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> .
+<http://virtual-assembly.org/ontologies/pair#involvementRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Role> .
+# 
+# http://virtual-assembly.org/ontologies/pair#involves
+<http://virtual-assembly.org/ontologies/pair#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#involves> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#involves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#involves> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#involves> <http://www.w3.org/2000/01/rdf-schema#label> "implique"@fr .
+<http://virtual-assembly.org/ontologies/pair#involves> <http://www.w3.org/2000/01/rdf-schema#label> "involves"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#locationOf
+<http://virtual-assembly.org/ontologies/pair#locationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#locationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#locationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Place> .
+<http://virtual-assembly.org/ontologies/pair#locationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+# 
+# http://virtual-assembly.org/ontologies/pair#membershipActor
+<http://virtual-assembly.org/ontologies/pair#membershipActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#membershipActor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#associationProperties> .
+<http://virtual-assembly.org/ontologies/pair#membershipActor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#MembershipAssociation> .
+<http://virtual-assembly.org/ontologies/pair#membershipActor> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+# 
+# http://virtual-assembly.org/ontologies/pair#membershipOrganization
+<http://virtual-assembly.org/ontologies/pair#membershipOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#membershipOrganization> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#associationProperties> .
+<http://virtual-assembly.org/ontologies/pair#membershipOrganization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#MembershipAssociation> .
+<http://virtual-assembly.org/ontologies/pair#membershipOrganization> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Organization> .
+# 
+# http://virtual-assembly.org/ontologies/pair#membershipRole
+<http://virtual-assembly.org/ontologies/pair#membershipRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#membershipRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> .
+<http://virtual-assembly.org/ontologies/pair#membershipRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#MembershipAssociation> .
+<http://virtual-assembly.org/ontologies/pair#membershipRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#MembershipRole> .
+# 
+# http://virtual-assembly.org/ontologies/pair#mobilizes
+<http://virtual-assembly.org/ontologies/pair#mobilizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#mobilizes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#pairIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#mobilizes> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#moblizedBy> .
+<http://virtual-assembly.org/ontologies/pair#mobilizes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+<http://virtual-assembly.org/ontologies/pair#mobilizes> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Means> .
+# 
+# http://virtual-assembly.org/ontologies/pair#moblizedBy
+<http://virtual-assembly.org/ontologies/pair#moblizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#moblizedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#pairIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#moblizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Means> .
+<http://virtual-assembly.org/ontologies/pair#moblizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+# 
+# http://virtual-assembly.org/ontologies/pair#neededBy
+<http://virtual-assembly.org/ontologies/pair#neededBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#neededBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#agentResourceProperty> .
+<http://virtual-assembly.org/ontologies/pair#neededBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#needs> .
+<http://virtual-assembly.org/ontologies/pair#neededBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#neededBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Agent> .
+<http://virtual-assembly.org/ontologies/pair#neededBy> <http://www.w3.org/2000/01/rdf-schema#label> "needed by"@en .
+<http://virtual-assembly.org/ontologies/pair#neededBy> <http://www.w3.org/2000/01/rdf-schema#label> "nécessité par"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#needs
+<http://virtual-assembly.org/ontologies/pair#needs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#needs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#agentResourceProperty> .
+<http://virtual-assembly.org/ontologies/pair#needs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Agent> .
+<http://virtual-assembly.org/ontologies/pair#needs> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#needs> <http://www.w3.org/2000/01/rdf-schema#label> "needs"@en .
+<http://virtual-assembly.org/ontologies/pair#needs> <http://www.w3.org/2000/01/rdf-schema#label> "nécessite"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#nourishes
+<http://virtual-assembly.org/ontologies/pair#nourishes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#nourishes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#nourishes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://virtual-assembly.org/ontologies/pair#nourishes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Idea> .
+<http://virtual-assembly.org/ontologies/pair#nourishes> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Idea> .
+# 
+# http://virtual-assembly.org/ontologies/pair#objectSubjectProperty
+<http://virtual-assembly.org/ontologies/pair#objectSubjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#objectSubjectProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#objectSubjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relie les Subjects et les Objects"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#offeredBy
+<http://virtual-assembly.org/ontologies/pair#offeredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#offeredBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#agentResourceProperty> .
+<http://virtual-assembly.org/ontologies/pair#offeredBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#offers> .
+<http://virtual-assembly.org/ontologies/pair#offeredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#offeredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#offeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "offered by"@en .
+<http://virtual-assembly.org/ontologies/pair#offeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "proposé par" .
+# 
+# http://virtual-assembly.org/ontologies/pair#offers
+<http://virtual-assembly.org/ontologies/pair#offers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#offers> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#agentResourceProperty> .
+<http://virtual-assembly.org/ontologies/pair#offers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#offers> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#offers> <http://www.w3.org/2000/01/rdf-schema#label> "offers"@en .
+<http://virtual-assembly.org/ontologies/pair#offers> <http://www.w3.org/2000/01/rdf-schema#label> "propose"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#operatedBy
+<http://virtual-assembly.org/ontologies/pair#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#operatedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#operatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#operates> .
+<http://virtual-assembly.org/ontologies/pair#operatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Place> .
+<http://virtual-assembly.org/ontologies/pair#operatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#operatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "exploité par"@fr .
+<http://virtual-assembly.org/ontologies/pair#operatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "operated by"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#operates
+<http://virtual-assembly.org/ontologies/pair#operates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#operates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#operates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#operates> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Place> .
+<http://virtual-assembly.org/ontologies/pair#operates> <http://www.w3.org/2000/01/rdf-schema#label> "exploite"@fr .
+<http://virtual-assembly.org/ontologies/pair#operates> <http://www.w3.org/2000/01/rdf-schema#label> "operates"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#organizationOfMembership
+<http://virtual-assembly.org/ontologies/pair#organizationOfMembership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#organizationOfMembership> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#associationProperties> .
+<http://virtual-assembly.org/ontologies/pair#organizationOfMembership> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Organization> .
+<http://virtual-assembly.org/ontologies/pair#organizationOfMembership> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#MembershipAssociation> .
+# 
+# http://virtual-assembly.org/ontologies/pair#originOf
+<http://virtual-assembly.org/ontologies/pair#originOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#originOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#originOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Challenge> .
+<http://virtual-assembly.org/ontologies/pair#originOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Finality> .
+# 
+# http://virtual-assembly.org/ontologies/pair#pairIntentionProperty
+<http://virtual-assembly.org/ontologies/pair#pairIntentionProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#pairIntentionProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#pairIntentionProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Catégorie de propriétés reliant un PAIR à une intentaion"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#partOf
+<http://virtual-assembly.org/ontologies/pair#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#partOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#partOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#partOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#partnerOf
+<http://virtual-assembly.org/ontologies/pair#partnerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#partnerOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#partnerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://virtual-assembly.org/ontologies/pair#partnerOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Organization> .
+<http://virtual-assembly.org/ontologies/pair#partnerOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Organization> .
+# 
+# http://virtual-assembly.org/ontologies/pair#producedBy
+<http://virtual-assembly.org/ontologies/pair#producedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#producedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#agentResourceProperty> .
+<http://virtual-assembly.org/ontologies/pair#producedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#produces> .
+<http://virtual-assembly.org/ontologies/pair#producedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#producedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Agent> .
+<http://virtual-assembly.org/ontologies/pair#producedBy> <http://www.w3.org/2000/01/rdf-schema#label> "delivered by"@en .
+<http://virtual-assembly.org/ontologies/pair#producedBy> <http://www.w3.org/2000/01/rdf-schema#label> "délivré par"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#produces
+<http://virtual-assembly.org/ontologies/pair#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#produces> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#agentResourceProperty> .
+<http://virtual-assembly.org/ontologies/pair#produces> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Agent> .
+<http://virtual-assembly.org/ontologies/pair#produces> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#produces> <http://www.w3.org/2000/01/rdf-schema#label> "produces"@en .
+<http://virtual-assembly.org/ontologies/pair#produces> <http://www.w3.org/2000/01/rdf-schema#label> "produit"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#referencedBy
+<http://virtual-assembly.org/ontologies/pair#referencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#referencedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#referencedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#references> .
+<http://virtual-assembly.org/ontologies/pair#referencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#referencedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#referencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "referenced by"@en .
+<http://virtual-assembly.org/ontologies/pair#referencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "référencé par"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#references
+<http://virtual-assembly.org/ontologies/pair#references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#references> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#references> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#references> <http://www.w3.org/2000/01/rdf-schema#label> "references"@en .
+<http://virtual-assembly.org/ontologies/pair#references> <http://www.w3.org/2000/01/rdf-schema#label> "rérérence"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#representedBy
+<http://virtual-assembly.org/ontologies/pair#representedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#representedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#documentedBy> .
+<http://virtual-assembly.org/ontologies/pair#representedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#represents> .
+<http://virtual-assembly.org/ontologies/pair#representedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#representedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#representedBy> <http://www.w3.org/2000/01/rdf-schema#label> "represented by"@en .
+<http://virtual-assembly.org/ontologies/pair#representedBy> <http://www.w3.org/2000/01/rdf-schema#label> "représenté par"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#represents
+<http://virtual-assembly.org/ontologies/pair#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#represents> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#documents> .
+<http://virtual-assembly.org/ontologies/pair#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#represents> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#represents> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an document \"strongly denotes\" a business subject, e.g. an invoice \"represents\" a commercial deal."@en .
+<http://virtual-assembly.org/ontologies/pair#represents> <http://www.w3.org/2000/01/rdf-schema#label> "represents"@en .
+<http://virtual-assembly.org/ontologies/pair#represents> <http://www.w3.org/2000/01/rdf-schema#label> "représente"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#sectorOf
+<http://virtual-assembly.org/ontologies/pair#sectorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#sectorOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> .
+<http://virtual-assembly.org/ontologies/pair#sectorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Sector> .
+<http://virtual-assembly.org/ontologies/pair#sectorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#solvedBy
+<http://virtual-assembly.org/ontologies/pair#solvedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#solvedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#solvedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#solves> .
+<http://virtual-assembly.org/ontologies/pair#solvedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Challenge> .
+<http://virtual-assembly.org/ontologies/pair#solvedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Means> .
+# 
+# http://virtual-assembly.org/ontologies/pair#solves
+<http://virtual-assembly.org/ontologies/pair#solves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#solves> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interIntentionProperty> .
+<http://virtual-assembly.org/ontologies/pair#solves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Means> .
+<http://virtual-assembly.org/ontologies/pair#solves> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Challenge> .
+# 
+# http://virtual-assembly.org/ontologies/pair#subactivityOf
+<http://virtual-assembly.org/ontologies/pair#subactivityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#subactivityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#partOf> .
+<http://virtual-assembly.org/ontologies/pair#subactivityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#subactivityOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Activity> .
+# 
+# http://virtual-assembly.org/ontologies/pair#subjectConceptProperties
+<http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#subjectConceptProperties> <http://www.w3.org/2000/01/rdf-schema#comment> "Relie les PairEntity aux Concepts"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#supportedBy
+<http://virtual-assembly.org/ontologies/pair#supportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#supportedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#supportedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#supports> .
+<http://virtual-assembly.org/ontologies/pair#supportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#supportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Actor> .
+# 
+# http://virtual-assembly.org/ontologies/pair#supports
+<http://virtual-assembly.org/ontologies/pair#supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#supports> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#interSubjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#supports> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#supports> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#topicOf
+<http://virtual-assembly.org/ontologies/pair#topicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#topicOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#entityConceptProperty> .
+<http://virtual-assembly.org/ontologies/pair#topicOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Theme> .
+<http://virtual-assembly.org/ontologies/pair#topicOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Object> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Subject> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://virtual-assembly.org/ontologies/pair#topicOf> <http://www.w3.org/2000/01/rdf-schema#label> "centre d'intérêt de"@fr .
+<http://virtual-assembly.org/ontologies/pair#topicOf> <http://www.w3.org/2000/01/rdf-schema#label> "interest of"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#typeOf
+<http://virtual-assembly.org/ontologies/pair#typeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#typeOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#entityConceptProperty> .
+<http://virtual-assembly.org/ontologies/pair#typeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Type> .
+<http://virtual-assembly.org/ontologies/pair#typeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#typeOf> <http://www.w3.org/2000/01/rdf-schema#label> "type de"@fr .
+<http://virtual-assembly.org/ontologies/pair#typeOf> <http://www.w3.org/2000/01/rdf-schema#label> "type of"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#typeOfConcept
+<http://virtual-assembly.org/ontologies/pair#typeOfConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#typeOfConcept> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#typeOf> .
+<http://virtual-assembly.org/ontologies/pair#typeOfConcept> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#ConceptType> .
+<http://virtual-assembly.org/ontologies/pair#typeOfConcept> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Concept> .
+# 
+# http://virtual-assembly.org/ontologies/pair#typeOfObject
+<http://virtual-assembly.org/ontologies/pair#typeOfObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#typeOfObject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#typeOf> .
+<http://virtual-assembly.org/ontologies/pair#typeOfObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#ObjectType> .
+<http://virtual-assembly.org/ontologies/pair#typeOfObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Object> .
+# 
+# http://virtual-assembly.org/ontologies/pair#typeOfSubject
+<http://virtual-assembly.org/ontologies/pair#typeOfSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#typeOfSubject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#typeOf> .
+<http://virtual-assembly.org/ontologies/pair#typeOfSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#SubjectType> .
+<http://virtual-assembly.org/ontologies/pair#typeOfSubject> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#usedBy
+<http://virtual-assembly.org/ontologies/pair#usedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#usedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#agentResourceProperty> .
+<http://virtual-assembly.org/ontologies/pair#usedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://virtual-assembly.org/ontologies/pair#uses> .
+<http://virtual-assembly.org/ontologies/pair#usedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#usedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Agent> .
+# 
+# http://virtual-assembly.org/ontologies/pair#uses
+<http://virtual-assembly.org/ontologies/pair#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://virtual-assembly.org/ontologies/pair#uses> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#agentResourceProperty> .
+<http://virtual-assembly.org/ontologies/pair#uses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Agent> .
+<http://virtual-assembly.org/ontologies/pair#uses> <http://www.w3.org/2000/01/rdf-schema#range> <http://virtual-assembly.org/ontologies/pair#Resource> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://virtual-assembly.org/ontologies/pair#aboutPage
+<http://virtual-assembly.org/ontologies/pair#aboutPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#aboutPage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#webPage> .
+<http://virtual-assembly.org/ontologies/pair#aboutPage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#aboutPage> <http://www.w3.org/2000/01/rdf-schema#label> "about page"@en .
+<http://virtual-assembly.org/ontologies/pair#aboutPage> <http://www.w3.org/2000/01/rdf-schema#label> "page \"à propos de\""@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#address
+<http://virtual-assembly.org/ontologies/pair#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PhysicalPlace> .
+<http://virtual-assembly.org/ontologies/pair#address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#address> <http://www.w3.org/2000/01/rdf-schema#label> "adress"@en .
+<http://virtual-assembly.org/ontologies/pair#address> <http://www.w3.org/2000/01/rdf-schema#label> "adresse"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#addressCountry
+<http://virtual-assembly.org/ontologies/pair#addressCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#addressCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PostalAddress> .
+<http://virtual-assembly.org/ontologies/pair#addressCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#addressCountry> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
+<http://virtual-assembly.org/ontologies/pair#addressCountry> <http://www.w3.org/2000/01/rdf-schema#label> "pays"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#addressLocality
+<http://virtual-assembly.org/ontologies/pair#addressLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#addressLocality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PostalAddress> .
+<http://virtual-assembly.org/ontologies/pair#addressLocality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#addressLocality> <http://www.w3.org/2000/01/rdf-schema#label> "locality"@en .
+<http://virtual-assembly.org/ontologies/pair#addressLocality> <http://www.w3.org/2000/01/rdf-schema#label> "ville"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#addressStreet
+<http://virtual-assembly.org/ontologies/pair#addressStreet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#addressStreet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PostalAddress> .
+<http://virtual-assembly.org/ontologies/pair#addressStreet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#addressStreet> <http://www.w3.org/2000/01/rdf-schema#label> "numéro et nom de rue"@fr .
+<http://virtual-assembly.org/ontologies/pair#addressStreet> <http://www.w3.org/2000/01/rdf-schema#label> "street address (number and street name)"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#addressZipCode
+<http://virtual-assembly.org/ontologies/pair#addressZipCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#addressZipCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://virtual-assembly.org/ontologies/pair#addressZipCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PostalAddress> .
+<http://virtual-assembly.org/ontologies/pair#addressZipCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#addressZipCode> <http://www.w3.org/2000/01/rdf-schema#label> "code postal"@fr .
+<http://virtual-assembly.org/ontologies/pair#addressZipCode> <http://www.w3.org/2000/01/rdf-schema#label> "zip code"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#alternativeLabel
+<http://virtual-assembly.org/ontologies/pair#alternativeLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#alternativeLabel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#label> .
+<http://virtual-assembly.org/ontologies/pair#alternativeLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#alternativeLabel> <http://www.w3.org/2000/01/rdf-schema#label> "alternative label"@en .
+<http://virtual-assembly.org/ontologies/pair#alternativeLabel> <http://www.w3.org/2000/01/rdf-schema#label> "label alternatif"@fr .
+<http://virtual-assembly.org/ontologies/pair#alternativeLabel> <http://www.w3.org/2000/01/rdf-schema#label> "libellé alternatif"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#comment
+<http://virtual-assembly.org/ontologies/pair#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#comment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#comment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment"@en .
+<http://virtual-assembly.org/ontologies/pair#comment> <http://www.w3.org/2000/01/rdf-schema#label> "commentaire"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#date
+<http://virtual-assembly.org/ontologies/pair#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://virtual-assembly.org/ontologies/pair#description
+<http://virtual-assembly.org/ontologies/pair#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://virtual-assembly.org/ontologies/pair#description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+<http://virtual-assembly.org/ontologies/pair#description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#dueDate
+<http://virtual-assembly.org/ontologies/pair#dueDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#dueDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#date> .
+<http://virtual-assembly.org/ontologies/pair#dueDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Task> .
+<http://virtual-assembly.org/ontologies/pair#dueDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://virtual-assembly.org/ontologies/pair#e-mail
+<http://virtual-assembly.org/ontologies/pair#e-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#e-mail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#e-mail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#e-mail> <http://www.w3.org/2000/01/rdf-schema#label> "e-mail"@en .
+<http://virtual-assembly.org/ontologies/pair#e-mail> <http://www.w3.org/2000/01/rdf-schema#label> "mel"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#endDate
+<http://virtual-assembly.org/ontologies/pair#endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#endDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#date> .
+<http://virtual-assembly.org/ontologies/pair#endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://virtual-assembly.org/ontologies/pair#endDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Event> .
+<http://virtual-assembly.org/ontologies/pair#endDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://virtual-assembly.org/ontologies/pair#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "date de fin"@fr .
+<http://virtual-assembly.org/ontologies/pair#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "end date"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#firstName
+<http://virtual-assembly.org/ontologies/pair#firstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#firstName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#label> .
+<http://virtual-assembly.org/ontologies/pair#firstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://virtual-assembly.org/ontologies/pair#firstName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Person> .
+<http://virtual-assembly.org/ontologies/pair#firstName> <http://www.w3.org/2000/01/rdf-schema#label> "first name"@en .
+<http://virtual-assembly.org/ontologies/pair#firstName> <http://www.w3.org/2000/01/rdf-schema#label> "prénom"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#homePage
+<http://virtual-assembly.org/ontologies/pair#homePage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#homePage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#webPage> .
+<http://virtual-assembly.org/ontologies/pair#homePage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://virtual-assembly.org/ontologies/pair#homePage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#homePage> <http://www.w3.org/2000/01/rdf-schema#label> "home page"@en .
+<http://virtual-assembly.org/ontologies/pair#homePage> <http://www.w3.org/2000/01/rdf-schema#label> "page \"de référence\""@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#identifier
+<http://virtual-assembly.org/ontologies/pair#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifiant"@fr .
+<http://virtual-assembly.org/ontologies/pair#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#label
+<http://virtual-assembly.org/ontologies/pair#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#label> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#label> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#label> <http://www.w3.org/2000/01/rdf-schema#label> "label"@en .
+<http://virtual-assembly.org/ontologies/pair#label> <http://www.w3.org/2000/01/rdf-schema#label> "label"@fr .
+<http://virtual-assembly.org/ontologies/pair#label> <http://www.w3.org/2000/01/rdf-schema#label> "libellé"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#lastName
+<http://virtual-assembly.org/ontologies/pair#lastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#lastName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#label> .
+<http://virtual-assembly.org/ontologies/pair#lastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://virtual-assembly.org/ontologies/pair#lastName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Person> .
+<http://virtual-assembly.org/ontologies/pair#lastName> <http://www.w3.org/2000/01/rdf-schema#label> "family name"@en .
+<http://virtual-assembly.org/ontologies/pair#lastName> <http://www.w3.org/2000/01/rdf-schema#label> "last name"@en .
+<http://virtual-assembly.org/ontologies/pair#lastName> <http://www.w3.org/2000/01/rdf-schema#label> "nom de famille"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#latitude
+<http://virtual-assembly.org/ontologies/pair#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PhysicalPlace> .
+<http://virtual-assembly.org/ontologies/pair#latitude> <http://www.w3.org/2000/01/rdf-schema#label> "latitude"@en .
+<http://virtual-assembly.org/ontologies/pair#latitude> <http://www.w3.org/2000/01/rdf-schema#label> "latitude"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#longitude
+<http://virtual-assembly.org/ontologies/pair#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PhysicalPlace> .
+<http://virtual-assembly.org/ontologies/pair#longitude> <http://www.w3.org/2000/01/rdf-schema#label> "longitude"@en .
+<http://virtual-assembly.org/ontologies/pair#longitude> <http://www.w3.org/2000/01/rdf-schema#label> "longitude"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#phone
+<http://virtual-assembly.org/ontologies/pair#phone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#phone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#phone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#phone> <http://www.w3.org/2000/01/rdf-schema#label> "phone"@en .
+<http://virtual-assembly.org/ontologies/pair#phone> <http://www.w3.org/2000/01/rdf-schema#label> "téléphone"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#preferedLabel
+<http://virtual-assembly.org/ontologies/pair#preferedLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#preferedLabel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#label> .
+<http://virtual-assembly.org/ontologies/pair#preferedLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://virtual-assembly.org/ontologies/pair#preferedLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#preferedLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#preferedLabel> <http://www.w3.org/2000/01/rdf-schema#label> "label préféré"@fr .
+<http://virtual-assembly.org/ontologies/pair#preferedLabel> <http://www.w3.org/2000/01/rdf-schema#label> "libellé préféré"@fr .
+<http://virtual-assembly.org/ontologies/pair#preferedLabel> <http://www.w3.org/2000/01/rdf-schema#label> "prefered label"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#startDate
+<http://virtual-assembly.org/ontologies/pair#startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#startDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://virtual-assembly.org/ontologies/pair#date> .
+<http://virtual-assembly.org/ontologies/pair#startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://virtual-assembly.org/ontologies/pair#startDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://virtual-assembly.org/ontologies/pair#Event> .
+<http://virtual-assembly.org/ontologies/pair#startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://virtual-assembly.org/ontologies/pair#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "date de départ"@fr .
+<http://virtual-assembly.org/ontologies/pair#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "start date"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#webPage
+<http://virtual-assembly.org/ontologies/pair#webPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://virtual-assembly.org/ontologies/pair#webPage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://virtual-assembly.org/ontologies/pair#webPage> <http://www.w3.org/2000/01/rdf-schema#label> "page web"@fr .
+<http://virtual-assembly.org/ontologies/pair#webPage> <http://www.w3.org/2000/01/rdf-schema#label> "web page"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://virtual-assembly.org/ontologies/pair#Activity
+<http://virtual-assembly.org/ontologies/pair#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Agent> .
+<http://virtual-assembly.org/ontologies/pair#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasStatus> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://virtual-assembly.org/ontologies/pair#ActivityStatus> .
+<http://virtual-assembly.org/ontologies/pair#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasPart> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "Une activité est entendue au sens très générique comme toute action entreprise par un Acteur avec une certaine finalité, à un certain moment, en un certain lieu.\nCe n'est _PAS_ une catégorie socio-économique au sens \"La ferme de la petite bourdaisière a pour activité Permaculture\"."@fr .
+<http://virtual-assembly.org/ontologies/pair#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activité"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#ActivityField
+<http://virtual-assembly.org/ontologies/pair#ActivityField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ActivityField> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Concept> .
+<http://virtual-assembly.org/ontologies/pair#ActivityField> <http://www.w3.org/2000/01/rdf-schema#label> "Champ d'activité"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation
+<http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Association> .
+<http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#comment> "Implication d'un Acteur dans une Activité"@fr .
+<http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#label> "Association d'implication"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#ActivityStatus
+<http://virtual-assembly.org/ontologies/pair#ActivityStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ActivityStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Status> .
+# 
+# http://virtual-assembly.org/ontologies/pair#ActivityType
+<http://virtual-assembly.org/ontologies/pair#ActivityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ActivityType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#SubjectType> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Actor
+<http://virtual-assembly.org/ontologies/pair#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Agent> .
+<http://virtual-assembly.org/ontologies/pair#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasPart> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasStatus> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#AgentStatus> .
+<http://virtual-assembly.org/ontologies/pair#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Acteur est entendu comme une personne morale ou physique."@fr .
+<http://virtual-assembly.org/ontologies/pair#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Acteur"@fr .
+<http://virtual-assembly.org/ontologies/pair#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor"@en .
+<http://virtual-assembly.org/ontologies/pair#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Personnality"@en .
+<http://virtual-assembly.org/ontologies/pair#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Personnalité"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#Agent
+<http://virtual-assembly.org/ontologies/pair#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+<http://virtual-assembly.org/ontologies/pair#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "un Agent est \"tout ce qui agit\", en particulier tout ce qui peut entretenir des liens avec des Ressources. A ce titre, les Activités, typiquement les Projets, sont considérées comme des sous-classes d'Agent."@fr .
+<http://virtual-assembly.org/ontologies/pair#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
+<http://virtual-assembly.org/ontologies/pair#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#AgentStatus
+<http://virtual-assembly.org/ontologies/pair#AgentStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#AgentStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Status> .
+# 
+# http://virtual-assembly.org/ontologies/pair#AgentType
+<http://virtual-assembly.org/ontologies/pair#AgentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#AgentType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#SubjectType> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Association
+<http://virtual-assembly.org/ontologies/pair#Association> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Association> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#Association> <http://www.w3.org/2000/01/rdf-schema#comment> "Classe abstraite générique permettant de réifier les relations binaires."@fr .
+<http://virtual-assembly.org/ontologies/pair#Association> <http://www.w3.org/2000/01/rdf-schema#label> "Association"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#AtomBasedResource
+<http://virtual-assembly.org/ontologies/pair#AtomBasedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#AtomBasedResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#AtomBasedResource> <http://www.w3.org/2000/01/rdf-schema#comment> ""@fr .
+<http://virtual-assembly.org/ontologies/pair#AtomBasedResource> <http://www.w3.org/2000/01/rdf-schema#label> "Bien ou Service"@fr .
+<http://virtual-assembly.org/ontologies/pair#AtomBasedResource> <http://www.w3.org/2000/01/rdf-schema#label> "Good or Service"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#BitBasedResource
+<http://virtual-assembly.org/ontologies/pair#BitBasedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#BitBasedResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#BitBasedResource> <http://www.w3.org/2000/01/rdf-schema#comment> "<p style=\"margin-top: 0\">\n      Des biens n'yant pas vraiment de r&#233;alit&#233; mat&#233;rielle. Logiciels, \n      m&#233;thodologies par exemple. \n    </p>" .
+<http://virtual-assembly.org/ontologies/pair#BitBasedResource> <http://www.w3.org/2000/01/rdf-schema#label> "Bien intangible"@fr .
+<http://virtual-assembly.org/ontologies/pair#BitBasedResource> <http://www.w3.org/2000/01/rdf-schema#label> "Intangible Good"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#Branch
+<http://virtual-assembly.org/ontologies/pair#Branch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Branch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityField> .
+<http://virtual-assembly.org/ontologies/pair#Branch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasPart> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Branch> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Challenge
+<http://virtual-assembly.org/ontologies/pair#Challenge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Challenge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Intention> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Concept
+<http://virtual-assembly.org/ontologies/pair#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Concept> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://virtual-assembly.org/ontologies/pair#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Concept est entendu au sens de SKOS comme une entrée dans un système de classification."@fr .
+<http://virtual-assembly.org/ontologies/pair#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+<http://virtual-assembly.org/ontologies/pair#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#ConceptBasedResource
+<http://virtual-assembly.org/ontologies/pair#ConceptBasedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ConceptBasedResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#ConceptBasedResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Biens ayant une réalité matérielle : Un vidéo-projecteur, un vélo par exemple"@fr .
+<http://virtual-assembly.org/ontologies/pair#ConceptBasedResource> <http://www.w3.org/2000/01/rdf-schema#label> "Bien tangible"@fr .
+<http://virtual-assembly.org/ontologies/pair#ConceptBasedResource> <http://www.w3.org/2000/01/rdf-schema#label> "Intangible Good"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#ConceptType
+<http://virtual-assembly.org/ontologies/pair#ConceptType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ConceptType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Type> .
+<http://virtual-assembly.org/ontologies/pair#ConceptType> <http://www.w3.org/2000/01/rdf-schema#label> "Concept type"@en .
+<http://virtual-assembly.org/ontologies/pair#ConceptType> <http://www.w3.org/2000/01/rdf-schema#label> "Type de concept"@fr .
+<http://virtual-assembly.org/ontologies/pair#ConceptType> <http://www.w3.org/2000/01/rdf-schema#label> "Types applicable to concepts for \"loose typing\""@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#Debate
+<http://virtual-assembly.org/ontologies/pair#Debate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Debate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Idea> .
+# 
+# http://virtual-assembly.org/ontologies/pair#DigitalPlace
+<http://virtual-assembly.org/ontologies/pair#DigitalPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#DigitalPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Place> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Document
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Object> .
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#documents> .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasStatus> .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#DocumentStatus> .
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasType> .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#DocumentType> .
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#referencedBy> .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#references> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#represents> .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasType> .
+_:genid24 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
+<http://virtual-assembly.org/ontologies/pair#Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#DocumentStatus
+<http://virtual-assembly.org/ontologies/pair#DocumentStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#DocumentStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Status> .
+# 
+# http://virtual-assembly.org/ontologies/pair#DocumentType
+<http://virtual-assembly.org/ontologies/pair#DocumentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#DocumentType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ObjectType> .
+<http://virtual-assembly.org/ontologies/pair#DocumentType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#typeOf> .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#DocumentType> <http://www.w3.org/2000/01/rdf-schema#label> "Document Type"@en .
+<http://virtual-assembly.org/ontologies/pair#DocumentType> <http://www.w3.org/2000/01/rdf-schema#label> "Type de document"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#Domain
+<http://virtual-assembly.org/ontologies/pair#Domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Domain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityField> .
+<http://virtual-assembly.org/ontologies/pair#Domain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasPart> .
+_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Domain> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Ecosystem
+<http://virtual-assembly.org/ontologies/pair#Ecosystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Ecosystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Organization> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Event
+<http://virtual-assembly.org/ontologies/pair#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasStatus> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://virtual-assembly.org/ontologies/pair#EventStatus> .
+<http://virtual-assembly.org/ontologies/pair#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#producedBy> .
+_:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Project> .
+<http://virtual-assembly.org/ontologies/pair#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Un événement est ici une manifestation organisée par des personnes et / ou des organisations, qui se déroule à un certain endroit, à un certain moment."@fr .
+<http://virtual-assembly.org/ontologies/pair#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Evèvement"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#EventInvolvementAssociation
+<http://virtual-assembly.org/ontologies/pair#EventInvolvementAssociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#EventInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> .
+<http://virtual-assembly.org/ontologies/pair#EventInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#involvementActivity> .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Event> .
+<http://virtual-assembly.org/ontologies/pair#EventInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#involvementRole> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#EventInvolvementRole> .
+# 
+# http://virtual-assembly.org/ontologies/pair#EventInvolvementRole
+<http://virtual-assembly.org/ontologies/pair#EventInvolvementRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#EventInvolvementRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#InvolvementRole> .
+# 
+# http://virtual-assembly.org/ontologies/pair#EventStatus
+<http://virtual-assembly.org/ontologies/pair#EventStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#EventStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityStatus> .
+# 
+# http://virtual-assembly.org/ontologies/pair#EventType
+<http://virtual-assembly.org/ontologies/pair#EventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#EventType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityType> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Finality
+<http://virtual-assembly.org/ontologies/pair#Finality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Finality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Intention> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Folder
+<http://virtual-assembly.org/ontologies/pair#Folder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Folder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Object> .
+<http://virtual-assembly.org/ontologies/pair#Folder> <http://www.w3.org/2000/01/rdf-schema#label> "Dossier"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#FolderType
+<http://virtual-assembly.org/ontologies/pair#FolderType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#FolderType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ObjectType> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Group
+<http://virtual-assembly.org/ontologies/pair#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Organization> .
+# 
+# http://virtual-assembly.org/ontologies/pair#GroupType
+<http://virtual-assembly.org/ontologies/pair#GroupType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#GroupType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#OrganizationType> .
+# 
+# http://virtual-assembly.org/ontologies/pair#HumanBasedResource
+<http://virtual-assembly.org/ontologies/pair#HumanBasedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#HumanBasedResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Resource> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Idea
+<http://virtual-assembly.org/ontologies/pair#Idea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Idea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+<http://virtual-assembly.org/ontologies/pair#Idea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasPart> .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Idea> .
+<http://virtual-assembly.org/ontologies/pair#Idea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasStatus> .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#IdeaStatus> .
+<http://virtual-assembly.org/ontologies/pair#Idea> <http://www.w3.org/2000/01/rdf-schema#label> "Idea"@en .
+<http://virtual-assembly.org/ontologies/pair#Idea> <http://www.w3.org/2000/01/rdf-schema#label> "Idée"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#IdeaStatus
+<http://virtual-assembly.org/ontologies/pair#IdeaStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#IdeaStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Status> .
+# 
+# http://virtual-assembly.org/ontologies/pair#IdeaType
+<http://virtual-assembly.org/ontologies/pair#IdeaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#IdeaType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#SubjectType> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Intention
+<http://virtual-assembly.org/ontologies/pair#Intention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Intention> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Subject> .
+# 
+# http://virtual-assembly.org/ontologies/pair#InvolvementRole
+<http://virtual-assembly.org/ontologies/pair#InvolvementRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#InvolvementRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Role> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Means
+<http://virtual-assembly.org/ontologies/pair#Means> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Means> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Intention> .
+# 
+# http://virtual-assembly.org/ontologies/pair#MembershipAssociation
+<http://virtual-assembly.org/ontologies/pair#MembershipAssociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#MembershipAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Association> .
+<http://virtual-assembly.org/ontologies/pair#MembershipAssociation> <http://www.w3.org/2000/01/rdf-schema#comment> "Appartenance d'un Acteur dans une Organisation"@fr .
+<http://virtual-assembly.org/ontologies/pair#MembershipAssociation> <http://www.w3.org/2000/01/rdf-schema#label> "Association d'appartenance"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#MembershipRole
+<http://virtual-assembly.org/ontologies/pair#MembershipRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#MembershipRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Role> .
+# 
+# http://virtual-assembly.org/ontologies/pair#MoneyBasedResource
+<http://virtual-assembly.org/ontologies/pair#MoneyBasedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#MoneyBasedResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Resource> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Object
+<http://virtual-assembly.org/ontologies/pair#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "Classe abstraite permettant de regrouper les classes destinées à la gestion des documents relatifs aux sujets de l'ontologie PAIR"@fr .
+<http://virtual-assembly.org/ontologies/pair#Object> <http://www.w3.org/2000/01/rdf-schema#label> "Object"@en .
+<http://virtual-assembly.org/ontologies/pair#Object> <http://www.w3.org/2000/01/rdf-schema#label> "Objet"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#ObjectType
+<http://virtual-assembly.org/ontologies/pair#ObjectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ObjectType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Type> .
+<http://virtual-assembly.org/ontologies/pair#ObjectType> <http://www.w3.org/2000/01/rdf-schema#label> "Object type"@en .
+<http://virtual-assembly.org/ontologies/pair#ObjectType> <http://www.w3.org/2000/01/rdf-schema#label> "Type d'objet"@fr .
+<http://virtual-assembly.org/ontologies/pair#ObjectType> <http://www.w3.org/2000/01/rdf-schema#label> "Types applicable to objects for \"loose typing\""@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#Organization
+<http://virtual-assembly.org/ontologies/pair#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#affiliates> .
+_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Person> .
+<http://virtual-assembly.org/ontologies/pair#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasType> .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#OrganizationType> .
+<http://virtual-assembly.org/ontologies/pair#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasType> .
+_:genid35 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://virtual-assembly.org/ontologies/pair#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organisation désigne un groupe d'individus s'étant rassemblés autour d'un objectif commun. Une organisation peut être formelle (structure juridique) ou informelle (groupe)."@fr .
+<http://virtual-assembly.org/ontologies/pair#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation"@fr .
+<http://virtual-assembly.org/ontologies/pair#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#OrganizationType
+<http://virtual-assembly.org/ontologies/pair#OrganizationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#OrganizationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#AgentType> .
+<http://virtual-assembly.org/ontologies/pair#OrganizationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#typeOf> .
+_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Organization> .
+<http://virtual-assembly.org/ontologies/pair#OrganizationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type d'organisation permet de caractériser les organisations : Par exemple, Entreprise / SARL ou Association ..."@fr .
+<http://virtual-assembly.org/ontologies/pair#OrganizationType> <http://www.w3.org/2000/01/rdf-schema#label> "Organization Type"@en .
+<http://virtual-assembly.org/ontologies/pair#OrganizationType> <http://www.w3.org/2000/01/rdf-schema#label> "Type d'organisation"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#PAIR
+<http://virtual-assembly.org/ontologies/pair#PAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#PAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#PAIR> <http://www.w3.org/2000/01/rdf-schema#comment> "Un PAIR est un élément d'un écosystème : Projet, Acteur, Idée ou Ressource."@fr .
+<http://virtual-assembly.org/ontologies/pair#PAIR> <http://www.w3.org/2000/01/rdf-schema#label> "PAIR"@en .
+<http://virtual-assembly.org/ontologies/pair#PAIR> <http://www.w3.org/2000/01/rdf-schema#label> "PAIR"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#PairEntity
+<http://virtual-assembly.org/ontologies/pair#PairEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#PairEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Classe abstraite ayant pour unique rôle de définir des propriétes communes à l'ensemble des classes de l'ontologie PAIR"@fr .
+<http://virtual-assembly.org/ontologies/pair#PairEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entité Pair"@fr .
+<http://virtual-assembly.org/ontologies/pair#PairEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Pair entity"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#Person
+<http://virtual-assembly.org/ontologies/pair#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Actor> .
+<http://virtual-assembly.org/ontologies/pair#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#affiliatedBy> .
+_:genid37 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Organization> .
+<http://virtual-assembly.org/ontologies/pair#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#follows> .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Person> .
+<http://virtual-assembly.org/ontologies/pair#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "(...)" .
+<http://virtual-assembly.org/ontologies/pair#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Individu"@fr .
+<http://virtual-assembly.org/ontologies/pair#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<http://virtual-assembly.org/ontologies/pair#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Personne"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#PhysicalPlace
+<http://virtual-assembly.org/ontologies/pair#PhysicalPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#PhysicalPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Place> .
+<http://virtual-assembly.org/ontologies/pair#PhysicalPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasType> .
+_:genid39 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#PlaceType> .
+<http://virtual-assembly.org/ontologies/pair#PhysicalPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#producedBy> .
+_:genid40 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Project> .
+<http://virtual-assembly.org/ontologies/pair#PhysicalPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Endroit"@fr .
+<http://virtual-assembly.org/ontologies/pair#PhysicalPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#Place
+<http://virtual-assembly.org/ontologies/pair#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasPart> .
+_:genid41 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Place> .
+<http://virtual-assembly.org/ontologies/pair#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Lieu"@fr .
+<http://virtual-assembly.org/ontologies/pair#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#PlaceType
+<http://virtual-assembly.org/ontologies/pair#PlaceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#PlaceType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#SubjectType> .
+<http://virtual-assembly.org/ontologies/pair#PlaceType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#typeOf> .
+_:genid42 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#PhysicalPlace> .
+<http://virtual-assembly.org/ontologies/pair#PlaceType> <http://www.w3.org/2000/01/rdf-schema#label> "Place Type"@en .
+<http://virtual-assembly.org/ontologies/pair#PlaceType> <http://www.w3.org/2000/01/rdf-schema#label> "Type d'endroit"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#PostalAddress
+<http://virtual-assembly.org/ontologies/pair#PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#PostalAddress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Subject> .
+<http://virtual-assembly.org/ontologies/pair#PostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Adresse postale"@fr .
+<http://virtual-assembly.org/ontologies/pair#PostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Postal Address"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#Project
+<http://virtual-assembly.org/ontologies/pair#Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Project> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#Project> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasStatus> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://virtual-assembly.org/ontologies/pair#ProjectStatus> .
+<http://virtual-assembly.org/ontologies/pair#Project> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#involves> .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid45 <http://www.w3.org/2002/07/owl#unionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Organization> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Person> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://virtual-assembly.org/ontologies/pair#Project> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#needs> .
+_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid49 <http://www.w3.org/2002/07/owl#unionOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#AtomBasedResource> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Skill> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://virtual-assembly.org/ontologies/pair#Project> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#produces> .
+_:genid52 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid53 <http://www.w3.org/2002/07/owl#unionOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#AtomBasedResource> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#Event> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://virtual-assembly.org/ontologies/pair#PhysicalPlace> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://virtual-assembly.org/ontologies/pair#Project> <http://www.w3.org/2000/01/rdf-schema#comment> "Un projet est une action temporaire entreprise pour atteindre des objectifs définis."@fr .
+<http://virtual-assembly.org/ontologies/pair#Project> <http://www.w3.org/2000/01/rdf-schema#label> "Project"@en .
+<http://virtual-assembly.org/ontologies/pair#Project> <http://www.w3.org/2000/01/rdf-schema#label> "Projet"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#ProjectInvolvementAssociation
+<http://virtual-assembly.org/ontologies/pair#ProjectInvolvementAssociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ProjectInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> .
+<http://virtual-assembly.org/ontologies/pair#ProjectInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#involvementActivity> .
+_:genid57 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Project> .
+<http://virtual-assembly.org/ontologies/pair#ProjectInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#involvementRole> .
+_:genid58 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#ProjectInvolvementRole> .
+# 
+# http://virtual-assembly.org/ontologies/pair#ProjectInvolvementRole
+<http://virtual-assembly.org/ontologies/pair#ProjectInvolvementRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ProjectInvolvementRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#InvolvementRole> .
+# 
+# http://virtual-assembly.org/ontologies/pair#ProjectStatus
+<http://virtual-assembly.org/ontologies/pair#ProjectStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ProjectStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityStatus> .
+# 
+# http://virtual-assembly.org/ontologies/pair#ProjectType
+<http://virtual-assembly.org/ontologies/pair#ProjectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ProjectType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityType> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Resource
+<http://virtual-assembly.org/ontologies/pair#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#PAIR> .
+<http://virtual-assembly.org/ontologies/pair#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasPart> .
+_:genid59 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Resource> .
+<http://virtual-assembly.org/ontologies/pair#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@en .
+<http://virtual-assembly.org/ontologies/pair#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Ressource"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#ResourceType
+<http://virtual-assembly.org/ontologies/pair#ResourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#ResourceType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#SubjectType> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Role
+<http://virtual-assembly.org/ontologies/pair#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Concept> .
+<http://virtual-assembly.org/ontologies/pair#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "un Role d'Agent. \"... en tant que ...\""@fr .
+<http://virtual-assembly.org/ontologies/pair#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@en .
+<http://virtual-assembly.org/ontologies/pair#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#Sector
+<http://virtual-assembly.org/ontologies/pair#Sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Sector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityField> .
+<http://virtual-assembly.org/ontologies/pair#Sector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasPart> .
+_:genid60 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Sector> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Skill
+<http://virtual-assembly.org/ontologies/pair#Skill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Skill> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#HumanBasedResource> .
+<http://virtual-assembly.org/ontologies/pair#Skill> <http://www.w3.org/2000/01/rdf-schema#comment> "Aptitude d’une personne physique (voire d’une personne morale) dans un domaine particulier"@fr .
+<http://virtual-assembly.org/ontologies/pair#Skill> <http://www.w3.org/2000/01/rdf-schema#label> "Compétence"@fr .
+<http://virtual-assembly.org/ontologies/pair#Skill> <http://www.w3.org/2000/01/rdf-schema#label> "Skill"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#Status
+<http://virtual-assembly.org/ontologies/pair#Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Status> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Concept> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Subject
+<http://virtual-assembly.org/ontologies/pair#Subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Subject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#PairEntity> .
+<http://virtual-assembly.org/ontologies/pair#Subject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#documentedBy> .
+_:genid61 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#Subject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#representedBy> .
+_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Document> .
+<http://virtual-assembly.org/ontologies/pair#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "Classe abstraite permettant de regrouper les classes directement concernées par le domaine de connaissance de l'ontologie PAIR" .
+<http://virtual-assembly.org/ontologies/pair#Subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
+<http://virtual-assembly.org/ontologies/pair#Subject> <http://www.w3.org/2000/01/rdf-schema#label> "Sujet" .
+# 
+# http://virtual-assembly.org/ontologies/pair#SubjectType
+<http://virtual-assembly.org/ontologies/pair#SubjectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#SubjectType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Type> .
+<http://virtual-assembly.org/ontologies/pair#SubjectType> <http://www.w3.org/2000/01/rdf-schema#label> "Subject type"@en .
+<http://virtual-assembly.org/ontologies/pair#SubjectType> <http://www.w3.org/2000/01/rdf-schema#label> "Type de sujet"@fr .
+<http://virtual-assembly.org/ontologies/pair#SubjectType> <http://www.w3.org/2000/01/rdf-schema#label> "Types applicable to subjects for \"loose typing\""@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#Task
+<http://virtual-assembly.org/ontologies/pair#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Activity> .
+<http://virtual-assembly.org/ontologies/pair#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#hasStatus> .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://virtual-assembly.org/ontologies/pair#TaskStatus> .
+# 
+# http://virtual-assembly.org/ontologies/pair#TaskInvolvementAssociation
+<http://virtual-assembly.org/ontologies/pair#TaskInvolvementAssociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#TaskInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityInvolvementAssociation> .
+<http://virtual-assembly.org/ontologies/pair#TaskInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#involvementActivity> .
+_:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#Task> .
+<http://virtual-assembly.org/ontologies/pair#TaskInvolvementAssociation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://virtual-assembly.org/ontologies/pair#involvementRole> .
+_:genid65 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://virtual-assembly.org/ontologies/pair#TaskInvolvementRole> .
+# 
+# http://virtual-assembly.org/ontologies/pair#TaskInvolvementRole
+<http://virtual-assembly.org/ontologies/pair#TaskInvolvementRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#TaskInvolvementRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#InvolvementRole> .
+# 
+# http://virtual-assembly.org/ontologies/pair#TaskStatus
+<http://virtual-assembly.org/ontologies/pair#TaskStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#TaskStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityStatus> .
+# 
+# http://virtual-assembly.org/ontologies/pair#TaskType
+<http://virtual-assembly.org/ontologies/pair#TaskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#TaskType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#ActivityType> .
+# 
+# http://virtual-assembly.org/ontologies/pair#Theme
+<http://virtual-assembly.org/ontologies/pair#Theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Theme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Concept> .
+<http://virtual-assembly.org/ontologies/pair#Theme> <http://www.w3.org/2000/01/rdf-schema#comment> "Thème réfère à ce dont on parle, au sujet qui nous anime. Les thèmes rassemblent les notions, les concepts, les centres d'intérêts, les \"tags\"."@fr .
+<http://virtual-assembly.org/ontologies/pair#Theme> <http://www.w3.org/2000/01/rdf-schema#label> "Thema"@en .
+<http://virtual-assembly.org/ontologies/pair#Theme> <http://www.w3.org/2000/01/rdf-schema#label> "Thème"@fr .
+<http://virtual-assembly.org/ontologies/pair#Theme> <http://www.w3.org/2000/01/rdf-schema#label> "Topic"@en .
+# 
+# http://virtual-assembly.org/ontologies/pair#Town
+<http://virtual-assembly.org/ontologies/pair#Town> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Town> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#PhysicalPlace> .
+<http://virtual-assembly.org/ontologies/pair#Town> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
+<http://virtual-assembly.org/ontologies/pair#Town> <http://www.w3.org/2000/01/rdf-schema#label> "Town"@en .
+<http://virtual-assembly.org/ontologies/pair#Town> <http://www.w3.org/2000/01/rdf-schema#label> "Ville"@fr .
+# 
+# http://virtual-assembly.org/ontologies/pair#Type
+<http://virtual-assembly.org/ontologies/pair#Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://virtual-assembly.org/ontologies/pair#Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://virtual-assembly.org/ontologies/pair#Concept> .
+<http://virtual-assembly.org/ontologies/pair#Type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"@en .
+<http://virtual-assembly.org/ontologies/pair#Type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"@fr .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

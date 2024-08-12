@@ -1,0 +1,37 @@
+---
+import dataProvider from '~/config/dataProvider';
+
+export interface Props {
+  associations: [object];
+}
+
+const { associations } = Astro.props;
+
+// const { data: associations } = await dataProvider.getMany('MembershipAssociation', {
+//   ids: Array.isArray(associationsUris) ? associationsUris : [associationsUris],
+// });
+
+const { data: organizations } = await dataProvider.getMany('Organization', {
+  ids: associations.filter((a) => a?.['pair:membershipOrganization']).map((a) => a['pair:membershipOrganization']),
+});
+
+const { data: roles } = await dataProvider.getMany('Person', {
+  ids: [...new Set(associations.filter((a) => a?.['pair:membershipRole']).map((a) => a['pair:membershipRole']))],
+});
+---
+
+<div class="grid gap-4 grid-cols-2 md:grid-cols-4">
+  {
+    associations?.map((association) => {
+      const organization = organizations.find((m) => m.id === association['pair:membershipOrganization']);
+      const role = roles.find((r) => r.id === association['pair:membershipRole']);
+      return (
+        <a href={`/organisations/${encodeURIComponent(organization?.id)}`}>
+          <img class="w-full h-[142.5px] rounded-full" src={organization?.image} alt={organization?.['pair:label']} />
+          <div class="text-center truncate font-bold">{organization?.['pair:label']}</div>
+          <div class="text-center truncate">{role?.['pair:label']}</div>
+        </a>
+      );
+    })
+  }
+</div>

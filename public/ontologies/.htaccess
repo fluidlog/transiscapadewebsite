@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /ontologies
+RewriteRule ^pair$ pair-2021-summer [R=303,L]
+RewriteRule ^pair/(.*) pair-2021-summer/$1 [R=303,L]

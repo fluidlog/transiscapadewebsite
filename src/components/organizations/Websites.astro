@@ -1,0 +1,87 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const domainMapping = {
+  'github.com': {
+    label: 'GitHub',
+    icon: 'tabler:brand-github',
+    color: 'bg-white',
+    contrastText: 'text-black',
+  },
+  'gitlab.com': {
+    label: 'GitLab',
+    icon: 'tabler:brand-gitlab',
+    color: 'bg-[#FF4500]',
+    contrastText: 'text-black',
+  },
+  'facebook.com': {
+    label: 'Facebook',
+    icon: 'tabler:brand-facebook',
+    color: 'bg-[#4267B2]',
+    contrastText: 'text-white',
+  },
+  'twitter.com': {
+    label: 'X (Twitter)',
+    icon: 'tabler:brand-x',
+    color: 'bg-[#00ACEE]',
+    contrastText: 'text-white',
+  },
+  'instagram.com': {
+    label: 'Instagram',
+    icon: 'tabler:brand-instagram',
+    color: 'bg-[#8a3ab9]',
+    contrastText: 'text-white',
+  },
+  'youtube.com': {
+    label: 'YouTube',
+    icon: 'tabler:brand-youtube',
+    color: 'bg-[#FF0000]',
+    contrastText: 'text-white',
+  },
+  'linkedin.com': {
+    label: 'LinkedIn',
+    icon: 'tabler:brand-linkedin',
+    color: 'bg-[#0e76a8]',
+    contrastText: 'text-white',
+  },
+};
+
+export interface Props {
+  urls: string | [string];
+}
+
+let { urls } = Astro.props;
+
+urls = Array.isArray(urls) ? urls : [urls];
+
+const badges = urls
+  ?.filter((url) => url)
+  .map((url) => {
+    if (!url.startsWith('http')) url = `https://${url}`;
+    let parsedUrl = new URL(url);
+    if (!parsedUrl) return null;
+    const domain = parsedUrl.hostname.replace('www.', '');
+    return {
+      url,
+      ...(domainMapping[domain] || {
+        label: 'Site web',
+        icon: 'tabler:world',
+        color: 'bg-slate-300',
+        contrastText: 'text-black',
+      }),
+    };
+  });
+---
+
+{
+  badges?.map((badge) => (
+    <a
+      href={badge.url}
+      target="_blank"
+      class={`${badge.color} ${badge.contrastText} text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 border border-gray-500`}
+    >
+      <Icon name={badge.icon} class="mr-1" />
+      {badge.label}
+    </a>
+  ))
+}

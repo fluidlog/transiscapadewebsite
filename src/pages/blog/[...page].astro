@@ -1,0 +1,35 @@
+---
+import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
+
+import Layout from '~/layouts/PageLayout.astro';
+import BlogList from '~/components/blog/List.astro';
+import Headline from '~/components/blog/Headline.astro';
+import Pagination from '~/components/blog/Pagination.astro';
+
+import dataProvider from '~/config/dataProvider';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const { data } = await dataProvider.getList('BlogPost', { sort: { field: 'dc:created', order: 'DESC' } });
+  return paginate(data, {
+    pageSize: 8,
+  });
+}) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { page } = Astro.props as Props;
+
+const metadata = {
+  title: 'The Blog',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+    <Headline subtitle="Les dernières actualités de l'Assemblée Virtuelle et des projets qu'elle porte">
+      Le Blog de l'AV
+    </Headline>
+    <BlogList posts={page.data} />
+    <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+  </section>
+</Layout>
