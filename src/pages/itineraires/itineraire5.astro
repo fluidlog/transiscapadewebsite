@@ -1,0 +1,68 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Itinéraire Libourne > Tours',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Soutenez le projet',
+          href: 'https://fr.tipeee.com/transiscapade',
+        },
+        {
+          variant: 'primary',
+          text: 'Vidéos',
+          href: 'https://www.youtube.com/@Transiscapade',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Itinéraire"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade' },
+      { target: '_blank', text: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105' },
+      { target: '_blank', text: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_1/' },
+      { target: '_blank', text: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/yannick-duthe-569a741b/' },
+    ]}
+    image={{ src: '~/assets/images/itineraire5.jpeg', alt: 'Canal latéral de Garonne' }}
+  >
+    <Fragment slot="title">
+      Libourne > Tours 
+    </Fragment>
+
+    <Fragment slot="subtitle">
+    (En utilisant la voie verte de la Scandibérique)
+<br />- Vendredi 03/05 : Libourne (à la place de Bordeaux)
+<br />- Samedi 04/05 : Saint-Romain [63 km]
+<br />- Dimanche 05/05 : Garat [50 km]
+<br />- Lundi 06/05 : Cellettes [36 km]
+<br />- Mardi 07/05 : Saulgond [60 km]
+<br />- Mercredi 08/05 : Payroux [48 km]
+<br />- Jeudi 09/05 : Chauvigny [49 km]
+<br />- Vendredi 10/05 : Senillé-Saint-Sauveur (Châtellerault) [35 km]
+<br />- Samedi 11/05 : Sainte-Maure de Touraine [39 km]
+<br />- Dimanche 12/05 : Montlouis [42 km]
+    </Fragment>
+  </Hero2>

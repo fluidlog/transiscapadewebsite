@@ -2,13 +2,8 @@
 import { Image } from 'astro:assets';
 import { SITE } from '~/utils/config';
 import logo from '~/assets/favicons/favicon.svg';
-
-const { width } = Astro.props;
 ---
 
 <div class="flex justify-start">
-  <Image src={logo} alt={SITE?.name} width={width || 65} />
-  <div class="pt-3 ml-2 text-2xl md:text-xl text-white whitespace-nowrap dark:text-white">
-    {SITE?.name}
-  </div>
+  <Image src={logo} alt={SITE?.name} width={400} />
 </div>

@@ -1,39 +1,9 @@
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
 import type { HTMLAttributes, ImageMetadata } from 'astro/types';
-
-export interface Actor {
-  id: string;
-  image: string;
-  'pair:label': string;
-  'pair:description': string;
-}
-
-export interface Document {
-  id: string;
-  image: string;
-  'pair:label': string;
-  'pair:description': string;
-  'pair:homePage': string | [string];
-}
-
-export interface Organization {
-  id: string;
-  image: string;
-  'pair:label': string;
-  'pair:description': string;
-  'pair:homePage': string | [string];
-}
-
-export interface Project {
-  id: string;
-  image: string;
-  'pair:label': string;
-  'pair:description': string;
-  'pair:involves': string | [string];
-}
 
 export interface Post {
   id: string;
-  image: string;
+  image: string,
   'pair:label': string;
   'pair:description': string;
 

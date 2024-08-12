@@ -1,0 +1,68 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Itinéraire Lyon > Marseille',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Soutenez le projet',
+          href: 'https://fr.tipeee.com/transiscapade',
+        },
+        {
+          variant: 'primary',
+          text: 'Vidéos',
+          href: 'https://www.youtube.com/@Transiscapade',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Itinéraire"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade' },
+      { target: '_blank', text: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105' },
+      { target: '_blank', text: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_1/' },
+      { target: '_blank', text: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/yannick-duthe-569a741b/' },
+    ]}
+    image={{ src: '~/assets/images/provence.jpg', alt: 'Yannick sur son vhélio' }}
+  >
+    <Fragment slot="title">
+      Lyon > Marseille
+    </Fragment>
+
+    <Fragment slot="subtitle">
+Lundi 18/03 : Lyon > Vienne [38 km]
+<br />- Mardi 19/03 : Saint-Cyr [44 km]
+<br />- Mercredi 20/03 : Chateauneuf-sur-Isère [43 km]
+<br />- jeudi 21/03 : Aoust-sur-Sye [43 km]
+<br />- vendredi 22/03 : Montélimar [37 km]
+<br />- samedi 23/03 : Bourg Saint Andeol [26 km]
+<br />- dimanche 24/03 : Avignon [63 km]
+<br />- lundi 25/03 : Eyragues [16 km]
+<br />- Mardi 26/03 : Salon-de-Provence [40 km]
+<br />- Mercredi 27/03 : Aix-en-Provence [33 km]
+<br />- Jeudi 28/03 : Marseille [33 km]
+    </Fragment>
+  </Hero2>

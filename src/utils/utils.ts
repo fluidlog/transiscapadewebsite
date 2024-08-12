@@ -2,7 +2,7 @@ import { I18N } from '~/utils/config';
 
 const formatter: Intl.DateTimeFormat =
   I18N?.dateFormatter ||
-  new Intl.DateTimeFormat('fr', {
+  new Intl.DateTimeFormat('en', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
@@ -51,18 +51,4 @@ export const toUiAmount = (amount: number) => {
   }
 
   return value;
-};
-
-export const arrayOf = (value): [] => {
-  // If the field is null-ish, we suppose there are no values.
-  if (!value) {
-    return [];
-  }
-  // Return as is.
-  if (Array.isArray(value)) {
-    return value as Array;
-  } else {
-    // Single value is made an array.
-    return [value];
-  }
 };

@@ -1,0 +1,64 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Presse',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Soutenez le projet',
+          href: 'https://fr.tipeee.com/transiscapade',
+        },
+        {
+          variant: 'primary',
+          text: 'Vidéos',
+          href: 'https://www.youtube.com/@Transiscapade',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Presse ..."
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade' },
+      { target: '_blank', text: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105' },
+      { target: '_blank', text: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_1/' },
+      { target: '_blank', text: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/yannick-duthe-569a741b/' },
+    ]}
+    image={{ src: '~/assets/images/vhelio-presse.png', alt: "Le vhélio dans la foret d'Amboise" }}
+  >
+    <Fragment slot="title">
+      Ils en parlent...
+    </Fragment>
+
+    <Fragment slot="subtitle">
+         <br />* <b>Le Mans TV</b> : <a href="https://www.youtube.com/watch?v=33aO5jrxcSA" target="blank">Reportage sur le vhélio au Mans</a>
+         <br />* <b>Actu.fr</b> : <a href="https://actu.fr/pays-de-la-loire/allonnes_72003/il-va-parcourir-pres-de-900-kilometres-en-un-mois-a-bord-dun-velo-solaire_60780828.html" target="_blank">Il va parcourir près de 900 kilometres en un mois à bord d'un vélo solaire</a>
+         <br />* <b>Ouest-France</b> : <a href="https://www.ouest-france.fr/pays-de-la-loire/allonnes-72700/depuis-allonnes-ce-sarthois-va-rejoindre-marseille-a-velo-solaire-e148e6b4-dd53-11ee-a459-4d0565cc4317" target="_blank">Depuis Allonnes ce sarthois va rejoindre Marseille à vélo solaire</a>
+         <br />* <b>Le Mans TV</b> : <a href="https://www.youtube.com/watch?v=ey1ELsuPLnA" target="blank">Reportage sur la Transiscapade</a>
+         <br />* <b>Le petit courrier</b> : voir photo ci-jointe...
+         <br />* <b>La Provence</b> : <a href="https://www.laprovence.com/article/region/53532548282371/parti-du-mans-il-parcourt-900-km-jusqua-marseille-a-bord-d-un-velo-solaire" target="blank">Arrivée à Marseille</a>
+         <br />* <b>Sud Ouest</b> : <a href="https://www.sudouest.fr/lot-et-garonne/buzet-sur-baise-il-fait-le-tour-de-france-a-velo-solaire-19560195.php" target="blank">Buzet-sur-baise, il fait le tour de france à vélo solaire</a>
+    </Fragment>
+  </Hero2>

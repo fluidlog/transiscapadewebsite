@@ -25,6 +25,8 @@ export interface I18NConfig {
 export interface AppBlogConfig {
   isEnabled: boolean;
   postsPerPage: number;
+  isRelatedPostsEnabled: boolean;
+  relatedPostsCount: number;
   post: {
     isEnabled: boolean;
     permalink: string;
@@ -116,7 +118,7 @@ const getMetadata = () => {
 
 const getI18N = () => {
   const _default = {
-    language: 'fr',
+    language: 'en',
     textDirection: 'ltr',
   };
 
@@ -136,6 +138,8 @@ const getAppBlog = () => {
   const _default = {
     isEnabled: false,
     postsPerPage: 6,
+    isRelatedPostsEnabled: false,
+    relatedPostsCount: 4,
     post: {
       isEnabled: true,
       permalink: '/blog/%slug%',

@@ -1,0 +1,62 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Pourquoi ?',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Soutenez le projet',
+          href: 'https://fr.tipeee.com/transiscapade',
+        },
+        {
+          variant: 'primary',
+          text: 'Vidéos',
+          href: 'https://www.youtube.com/@Transiscapade',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Pourquoi ..."
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade' },
+      { target: '_blank', text: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105' },
+      { target: '_blank', text: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_1/' },
+      { target: '_blank', text: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/yannick-duthe-569a741b/' },
+    ]}
+    image={{ src: '~/assets/images/pourquoi.png', alt: 'Départ du Mans avec poupoule' }}
+  >
+    <Fragment slot="title">
+      La transiscapade ?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+         1) Pour me rendre au 9ème transiscothon de Marseille sans prendre ni l'avion, ni la voiture, ni le train, ni le bateau, ni l'ULM, ni une barque (manque de temps...)
+         <br /><br />2) Pour rencontrer des acteur.ice.s connecté.e.s localement au territoire et qui pourront maintenir une source Transiscope.
+         <br /><br />3) Suite logique de mon parcours (voir Menu > Projet > Qui ?)... Je vais pouvoir continuer à visiter des lieux en permaculture (projet Permalieux), mais en consommant moins d'énergie.
+         <br /><br />4) Pour le fun, pour me mettre en vie, parce-que j'adore les défis, pour mieux me connaitre, pour rencontrer le réel, pour incarner.
+         <br /><br />5) Pour montrer qu'on peut traverser la France en vélo.
+    </Fragment>
+  </Hero2>

@@ -1,31 +1,27 @@
 site:
-  name: Assemblée Virtuelle
-  site: 'https://assemblee-virtuelle.org'
+  name: Transiscapade
+  site: 'https://transiscapa.de'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: 
 
 # Default SEO metadata
 metadata:
   title:
-    default: Assemblée Virtuelle
-    template: '%s — Assemblée Virtuelle'
-  description: 'Favoriser la mise en réseau des acteurs de la transition grâce à la mise en synergie de leurs systèmes d’information.'
+    default: Transiscapade
+    template: '%s — Transiscapade'
+  description: "\U0001F680 Bienvenu sur le site de la Transiscapade !"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Assemblée Virtuelle
+    site_name: Transiscapade
     images:
-      - url: '/full-logo.png'
-        width: 500
-        height: 500
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
     type: website
-  twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
-    cardType: summary_large_image
 
 i18n:
   language: en
@@ -59,6 +55,11 @@ apps:
       pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
       robots:
         index: false
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null # or "G-XXXXXXXXXX"
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

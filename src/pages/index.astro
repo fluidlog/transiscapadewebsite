@@ -11,11 +11,9 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import FeaturedProjects from '~/components/projects/FeaturedProjects.astro';
 
 const metadata = {
-  title:
-    'Assemblée Virtuelle — Favoriser la mise en réseau des acteurs de la transition grâce à la mise en synergie de leurs systèmes d’information.',
+  title: "Transiscapade, l'escapade au coeur de la transition",
   ignoreTitleTemplate: true,
 };
 ---
@@ -23,131 +21,181 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero />
-
-  <Note />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Nos projets"
-    subtitle="L'association Assemblée Virtuelle fédère un écosystème d'acteurs développant ensemble des communs au service de la transition"
-    items={[
-      {
-        title: 'Applications sémantiques & pair à pair',
-        description: 'Logiciels de cartographie, réseaux sociaux, outils collaboratifs',
-        icon: 'flat-color-icons:template',
-        callToAction: {
-          text: 'Voir les projets',
-          href: '/projets/applications',
-          variant: 'link',
-        },
-      },
-      {
-        title: 'Vocabulaires génériques et métiers',
-        description: "Pour permettre l'interopérabilité des systèmes d'information",
-        icon: 'flat-color-icons:gallery',
-        callToAction: {
-          text: 'Voir les projets',
-          href: '/projets/ontologies',
-          variant: 'link',
-        },
-      },
-      {
-        title: 'Méthodologies de collaboration',
-        description: "Reposant sur les principes de l'open-source et du pair à pair",
-        icon: 'flat-color-icons:approval',
-        callToAction: {
-          text: 'Voir les projets',
-          href: '/projets/methodologies',
-          variant: 'link',
-        },
-      },
-      {
-        title: 'Innovation sociale et écologique',
-        description: "Co-développement de projets s'inscrivant dans la transition",
-        icon: 'flat-color-icons:document',
-        link: '/projets/innovations-sociales',
-        callToAction: {
-          text: 'Voir les projets',
-          href: '/projets/innovations-sociales',
-          variant: 'link',
-        },
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
-  <!-- HighlightedPosts Widget ******* -->
-
-  <FeaturedProjects
-    title="Les solutions logicielles de l'écosystème"
-    subtitle="Les logiciels développés ou promus dans le cadre de l’Assemblée Virtuelle ont vocation à favoriser le développement d’écosystèmes logiciels, de systèmes d’information décentralisés et fédérés, au service de l’autonomie et de la mise en réseau de leurs communautés d’utilisateurs."
-    callToAction={{
-      variant: 'primary',
-      text: 'Tous les projets logiciels',
-      href: '/projets/applications',
-      icon: 'tabler:arrow-right',
-    }}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <Features2
-    title="Nos moyens d'action"
-    columns={3}
-    items={[
-      {
-        title: 'Recherche-action',
-        description:
-          'Autour des architectures distribuées (technologies, méthodologies au service des organisations en réseau)',
-        icon: 'tabler:settings-search',
-      },
-      {
-        title: 'Sensibilisation & essaimage',
-        description:
-          "Partage des technologies et méthodologies sous license libre, animation d'une communauté apprenante, organisation d'événements",
-        icon: 'tabler:arrows-maximize',
-      },
-      {
-        title: 'Prestation de services',
-        description: "En collaboration avec nos organisations membres, qui reversent une contribution à l'association",
-        icon: 'tabler:users',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
-  <BlogLatestPosts title="Derniers articles" />
-
-  <CallToAction
+  <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Forum de discussion',
-        href: 'https://forums.assemblee-virtuelle.org',
+        text: 'Soutenez le projet',
+        href: 'https://fr.tipeee.com/transiscapade',
         target: '_blank',
-        icon: 'tabler:message',
+        icon: 'tabler:moneybag',
+      },
+      { 
+        variant: 'primary', 
+        text: 'Voir les vidéos', 
+        href: 'https://www.youtube.com/@Transiscapade',
+        target: '_blank',
+        icon: 'tabler:brand-youtube',
+      },
+      { 
+        variant: 'primary', 
+        text: 'Facebook', 
+        href: 'https://www.facebook.com/profile.php?id=61556861211105',
+        target: '_blank',
+        icon: 'tabler:brand-facebook',
+      },
+      { 
+        variant: 'primary', 
+        text: 'Instagram', 
+        href: 'https://www.instagram.com/transiscapade_1/',
+        target: '_blank',
+        icon: 'tabler:brand-instagram',
+      },
+      { 
+        variant: 'primary', 
+        text: 'LinkedIn', 
+        href: 'https://www.linkedin.com/in/yannick-duthe-569a741b/',
+        target: '_blank',
+        icon: 'tabler:brand-linkedin',
       },
     ]}
   >
-    <Fragment slot="title">Rejoignez notre communauté !</Fragment>
+    <Fragment slot="title">
+      L'escapade au coeur de la transition !
+    </Fragment>
+
     <Fragment slot="subtitle">
-      Notre forum de discussion est l'espace de prédilection pour interragir avec notre communauté. N'hésitez pas à vous
-      inscrire, cela vous permettra de recevoir un récap hebdomadaire avec les messages les plus populaires.
+      <span class="hidden sm:inline">
+        Partons ensemble, découvrir les alternatives de notre territoire !
+        <br/><br/> Première Transiscapade (mars > avril 2024) : <br/> Le Mans > Lyon > Marseille > Montpellier > Toulouse > Bordeaux
+      </span>
     </Fragment>
-    <Fragment slot="bg">
-      <div
-        class="bg-cover w-full h-[740px] flex items-center justify-center"
-        style="background-image: url('/hero.jpg');"
-      >
-      </div>
-    </Fragment>
-  </CallToAction>
+  </Hero>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    tagline="DEFINITIONS"
+    title="Transi-quoi ? C'est quoi tous ces termes ?"
+    subtitle="Voici quelques définitions pour mieux comprendre... :)"
+    items={[
+      {
+        title: "Transi-tion",
+        description:
+          "La transition, c'est imaginer et vouloir que l'humanité évolue vers un monde plus vivant",
+        icon: 'tabler:route',
+      },
+      {
+        title: "Transi-scapade",
+        description:
+          "Une transiscapade, est un voyage à bord d'un véhicule intermédiaire, pour aller découvrir les alternatives dans les territoires",
+        icon: 'tabler:bike',
+      },
+      {
+        title: "Transi-scope",
+        description:
+          "www.transiscope.org est un site web contenant une carte agrégative d'une cinquantaine de sources locales (bases de données d'alternatives), animés par des groupes locaux, qui référencent des alternatives de transition",
+        icon: 'tabler:search',
+      },
+      {
+        title: "Transi-scothon",
+        description:
+          "C'est un événement organisé par le projet Transiscope tous les 6 mois, dans une ville de France, pour fêter et cartographier les alternatives locales",
+        icon: 'tabler:home',
+      }
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Foire aux questions"
+    subtitle="Les réponses aux questions les plus souvent posées."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: "Pourquoi le nom Transiscapade ?",
+        description:
+          "C'est d'abord lié au projet Transiscope, et l'envie était de se connecter aux territoire pour incarner mieux le projet. On aurait pu l'appeler Transibalade, mais ça faisait moins de points au scrable...",
+      },
+      {
+        title: "C'est quoi cet engin ?",
+        description:
+          "Le vhélio, est un vélo solaire auto-construit. C'est le produit que propose l'association 'Vélo Solaire pour tous', qui met en open-source les plans et la documentation pour fabriquer un vhélio.",
+      },
+      {
+        title: "Combien de temps va durer chaque Transiscapade ?",
+        description:
+          "Cela dépend de la ville où se trouve les Transiscothons. Pour celui de Marseille, je vais parcourir environ 2000 Km en 2 mois (A/R).",
+      },
+      {
+        title: "Quel est ton itinéraire ?",
+        description:
+          "Pour la première transiscapade (le Mans > Marseille), je vais faire une boucle : Tours, Vierzon, Bourges, Nevers, Lyon, Marseille, Toulouse, Bordeaux et retour à Tours (voir Menu > Itinéraires dans le bandeau du haut...).",
+      },
+      {
+        title: "Combien de Km fais-tu par jour ?",
+        description:
+          "Pour la première, je vais faire des tronçons entre 40 et 70 km. Mon objectif est plus l'endurance que la vitesse.",
+      },
+      {
+        title: "Qu'as-tu emporté sur ton vélo solaire ?",
+        description:
+          "Une batterie de secours, une boite à outils, des vêtements de rechange, un peu de nourriture, de qui boire, un réchaud gaz, un matelas gonflable, 2 paires de chaussures, un ordinateur portable pour travailler et un ukulele pour faire de la musique avec celleux que je croise.",
+      },
+      {
+        title: "Quel poids fait le vélo solaire en tout ?",
+        description:
+          "Nu, le vélo solaire pèse 70 kg. Avec les bagages, environ 120 kg, plus moi...",
+      },
+      {
+        title: "Quelle puissance font le moteur, la batterie et le panneau photovoltaique ?",
+        description:
+          "Le moteur : 250 W, la batterie : 250 W, et le panneau photovoltaique : 235 W",
+      },
+      {
+        title: "Le panneau photovoltaique permet-il de recharger la batterie ?",
+        description:
+          "Cela dépend de l'ensoleillement, et de l'assistance dont j'ai besoin... Si je contribue moyennement, et qu'il fait beau (ciel bleu), je peux tenir indéfiniement. S'il y a des nuages, et que je demande une assistance maximale, je peux vider les 2 batteries en 30 km ! :)",
+      },
+      {
+        title: "A quelle vitesse roules-tu en moyenne ?",
+        description:
+          "Cela dépend du dénivelé. S'il ya des côtes et des pentes, je suis à 10 km/h en côte et maximum 25 km en descente. Sur du plat, je suis en général à 15-20 km/h en moyenne. La réglementation impose de ne pas dépasser 25 Km/h, et c'est déjà suffisant. Au dela, cela peut être dangereux pour moi et pour les autres.",
+      },
+      {
+        title: "Est-ce dangereux de traverser la France à Vélo ?",
+        description:
+          "Il faut rester concentrer et vigilent, mais globalement, si vous suivez les voix vertes, cela représente 95% de petites routes de campagne très calmes.",
+      },
+      {
+        title: "Es-tu entrainé physiquement ?",
+        description:
+          "Pas particulièrement, je me suis remis au vélo depuis 2 ans, et j'ai mon vélo solaire depuis 8 mois. J'ai juste testé en condition de froid assez régulièrement. Pour la transiscapade, je m'étire régulièrement, je bois souvent, et je respire profondément.",
+      },
+      {
+        title: "Le vélo solaire est-il la solution de demain ?",
+        description:
+          "Non, la solution pour demain est d'abord de moins nous déplacer, ou d'utiliser la marche ou le vélo. Pour déplacer une personne, le meilleur moyen reste le vélo. Le vélo solaire (avec batteries, panneau photovoltaique et moteur), ne servent qu'à transporter les bagages et le poids du vélo lui-même",
+      },
+      {
+        title: "Pourquoi Marseille ?",
+        description:
+          "Parce qu'après, il y a la mer, et le vhélio ne va pas dans l'eau.",
+      },
+      {
+        title: "Pourquoi avoir choisi le financement participatif pour ce projet ?",
+        description:
+          "J'ai détaillé tout cela dans le blog et dans une vidéo que je vous invite à consulter.",
+      },
+      {
+        title: "Comment aider le projet ?",
+        description:
+          "Vous pouvez nous aider bénévolement, en participant à la cartographie des alternatives via l'association de soutien à Transiscope. Vous pouvez aussi faire un don, soit à la Transiscapade, soit directement à Transiscope (voir site https://transiscope.com)",
+      },
+    ]}
+  />
+
 </Layout>

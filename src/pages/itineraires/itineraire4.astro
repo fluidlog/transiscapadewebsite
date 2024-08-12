@@ -1,0 +1,65 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Itinéraire Toulouse > Bordeaux',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Soutenez le projet',
+          href: 'https://fr.tipeee.com/transiscapade',
+        },
+        {
+          variant: 'primary',
+          text: 'Vidéos',
+          href: 'https://www.youtube.com/@Transiscapade',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Itinéraire"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade' },
+      { target: '_blank', text: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105' },
+      { target: '_blank', text: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_1/' },
+      { target: '_blank', text: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/yannick-duthe-569a741b/' },
+    ]}
+    image={{ src: '~/assets/images/canal-midi.jpeg', alt: 'Canal du midi' }}
+  >
+    <Fragment slot="title">
+      Toulouse > Bordeaux
+    </Fragment>
+
+    <Fragment slot="subtitle">
+- 22/04 > 26/04 : Toulouse (Auzeville-Tolosanne)
+<br />- Samedi 27/04 : Verdun-sur-Garonne (47 km)
+<br />- Dimanche 28/04 : Moissac (39 km)
+<br />- Lundi 29/04 : Agen (44 km)
+<br />- Mardi 30/04 : Damazan (34 km)
+<br />- Mercredi 01/05 : Marmande (35 km)
+<br />- Jeudi 02/05 : Courpiac (56 km)
+<br />- Vendredi 03/05 : Bordeaux ou Libourne (si je décide de contourner Bordeaux) ?
+    </Fragment>
+  </Hero2>

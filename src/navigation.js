@@ -1,123 +1,148 @@
-import { getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: "L'association",
+      text: "L'escapade",
       links: [
         {
-          text: "Raison d'être et code social",
-          href: '/documents/https%3A%2F%2Fdata.virtual-assembly.org%2Fdocuments%2F7bc5eb12-3772-4cad-b14f-ca90966e4810',
+          text: 'Quoi ?',
+          href: getPermalink(),
         },
         {
-          text: 'Organisations membres',
-          href: '/organisations',
+          text: 'Qui ?',
+          href: getPermalink('/accueil/qui'),
         },
         {
-          text: 'Histoire',
-          href: '/documents/https%3A%2F%2Fdata.virtual-assembly.org%2Fdocuments%2F6d255935-1515-495a-95c1-d458d6aaee22',
+          text: 'Pourquoi ?',
+          href: getPermalink('/accueil/pourquoi'),
+        },
+        {
+          text: 'Presse',
+          href: getPermalink('/accueil/presse'),
         },
       ],
     },
     {
-      text: 'Projets',
+      text: 'Itinéraires',
       links: [
         {
-          text: 'Applications',
-          href: '/projets/applications',
+          text: 'Le Mans > Lyon',
+          href: getPermalink('/itineraires/itineraire1'),
         },
         {
-          text: 'Ontologies',
-          href: '/projets/ontologies',
+          text: 'Lyon > Marseille',
+          href: getPermalink('/itineraires/itineraire2'),
         },
         {
-          text: 'Méthodologies',
-          href: '/projets/methodologies',
+          text: 'Marseille > Toulouse',
+          href: getPermalink('/itineraires/itineraire3'),
         },
         {
-          text: 'Innovations sociales',
-          href: '/projets/innovations-sociales',
+          text: 'Toulouse > Bordeaux',
+          href: getPermalink('/itineraires/itineraire4'),
+        },
+        {
+          text: 'Bordeaux > Le Mans',
+          href: getPermalink('/itineraires/itineraire5'),
         },
       ],
     },
     {
-      text: 'Actualités',
+      text: 'Blog',
       links: [
         {
-          text: 'Blog',
-          href: '/blog',
-        },
-      ],
-    },
-    {
-      text: 'Communauté',
-      links: [
-        {
-          text: 'Forum',
-          href: 'https://forums.assemblee-virtuelle.org',
+          text: 'Accueil',
+          href: getBlogPermalink(),
         },
         {
-          text: 'Chat',
-          href: 'https://forums.assemblee-virtuelle.org/chat',
+          text: 'Naissance du projet',
+          href: getPermalink('post-0', 'post'),
         },
         {
-          text: 'Peertube',
-          href: 'https://peertube.virtual-assembly.org/',
+          text: 'Financement participatif',
+          href: getPermalink('post-1', 'post'),
         },
         {
-          text: 'GitHub',
-          href: 'https://github.com/assemblee-virtuelle',
+          text: 'Préparation avant le départ',
+          href: getPermalink('post-2', 'post'),
+        },
+        {
+          text: 'Le premier jour vers Ecommoy !',
+          href: getPermalink('post-3', 'post'),
+        },
+        {
+          text: "Brass'vie à Jupilles !",
+          href: getPermalink('post-4', 'post'),
+        },
+        {
+          text: "Inondations entre Jupilles et Tours !",
+          href: getPermalink('post-5', 'post'),
+        },
+        {
+          text: "Internet associatif à Tours !",
+          href: getPermalink('post-6', 'post'),
         },
       ],
     },
   ],
+  actions: [{ text: 'Vidéos', href: 'https://www.youtube.com/@Transiscapade', target: '_blank' }, 
+  { variant: 'primary', text: 'Soutenez le projet', href: 'https://fr.tipeee.com/transiscapade/', target: '_blank' }
+],
 };
 
 export const footerData = {
   links: [
     {
-      title: "L'association",
+      title: 'Transiscopade',
       links: [
-        { text: "Raison d'être et code social", href: '#' },
-        { text: 'Organisations membres', href: '#' },
-        { text: "L'équipe", href: '#' },
-        { text: 'Histoire', href: '#' },
+        { text: 'Financement participatif', href: 'https://fr.tipeee.com/transiscapade/' },
+        { text: 'Blog', href: '/blog' },
       ],
     },
     {
-      title: 'Projets',
+      title: 'Projets transis-portés',
       links: [
-        { text: 'Applications', href: '#' },
-        { text: 'Ontologies', href: '#' },
-        { text: 'Méthodologies', href: '#' },
-        { text: 'Innovations sociales', href: '#' },
+        { text: 'Transiscope', href: 'https://transiscope.org/' },
+        { text: 'Assemblée virtuelle', href: 'https://virtual-assembly.org/' },
+        { text: 'Vhélio', href: 'https://vhelio.org' },
+        { text: 'Les chemins de la transition', href: 'https://lescheminsdelatransition.org' },
+        { text: 'Low-tech lab', href: 'https://lowtechlab.org/' },
+        { text: 'Hameaux légers', href: 'https://hameaux-legers.org/' },
+        { text: 'Monnaie libre', href: 'https://monnaie-libre.fr/' },
       ],
     },
     {
-      title: 'Actualités',
-      links: [{ text: 'Blog', href: '/blog' }],
-    },
-    {
-      title: 'Communauté',
+      title: 'Autes projets proches',
       links: [
-        { text: 'Forum', href: '#' },
-        { text: 'Chat', href: '#' },
-        { text: 'PeerTube', href: '#' },
-        { text: 'GitHub', href: '#' },
+        { text: 'Le périple de Barnabé Chaillot en vhélio', href: 'https://vhelio.org/suivez-le-periple-de-barnabe/' },
+        { text: 'Jérome Zindy - vélo-reporter', href: 'https://www.jeromezindy.fr/' },
+        { text: 'Jacob Kharu - Voyage en europe en vélo solaire', href: 'https://www.youtube.com/@JacobKarhu' },
+        { text: 'La Sun Trip', href: 'https://www.thesuntrip.com/' },
+        { text: 'La diagonale du plein', href: 'https://www.diagonaleduplein.fr/' },
+        { text: 'Le tour alternatiba (2024)', href: 'https://alternatiba.eu/nos-actions/tour-alternatiba-2024/' },
+        { text: "L'Altertour", href: 'https://www.altercampagne.net/' },
+        { text: "Le PermacoolTour", href: 'https://www.kevinsimon.fr/index.php/le-permacooltour-3/' },
+        { text: "Demain c'est mieux !", href: 'https://demaincestmieux.com/' },
       ],
     },
-  ],
-  secondaryLinks: [
-    // { text: 'Terms', href: getPermalink('/terms') },
-    // { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    {
+      title: 'Contact',
+      links: [
+        { text: 'Qui suis-je ?', href: '/accueil/qui' },
+        { text: 'Comment me contacter ?', href: '/accueil/qui' },
+      ],
+    },
   ],
   socialLinks: [
-    // { ariaLabel: 'Mastodon', icon: 'tabler:brand-mastodon', href: '#' },
-    // { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/assemblee-virtuelle' },
+    { ariaLabel: 'youtube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@Transiscapade', target: '_blank' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105', target: '_blank' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_1/', target: '_blank' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/yannick-duthe-569a741b/', target: '_blank' },
+    { ariaLabel: 'Financement participatif', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade', target: '_blank' },
   ],
   footNote: `
-    Crée avec <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://astro.build/">Astro</a> et <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://archipel.assemblee-virtuelle.org">des données sémantiques</a>.
+    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
+    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
   `,
 };

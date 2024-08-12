@@ -1,0 +1,73 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Itinéraire Le Mans > Lyon',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Soutenez le projet',
+          href: 'https://fr.tipeee.com/transiscapade',
+        },
+        {
+          variant: 'primary',
+          text: 'Facebook',
+          href: 'https://www.facebook.com/profile.php?id=61556861211105',
+        },
+        {
+          variant: 'primary',
+          text: 'Vidéos',
+          href: 'https://www.youtube.com/@Transiscapade',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Itinéraire"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade' },
+      { target: '_blank', text: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105' },
+      { target: '_blank', text: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_1/' },
+      { target: '_blank', text: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/yannick-duthe-569a741b/' },
+    ]}
+    image={{ src: '~/assets/images/vhelio-broute.jpg', alt: 'Yannick sur son vhélio' }}
+  >
+    <Fragment slot="title">
+      Le Mans > Lyon
+    </Fragment>
+
+    <Fragment slot="subtitle">
+    (Mars 2024)
+<br />- lundi 4 : Allonnes > Jupilles
+<br />- mardi 5 : Jupilles > Tours > Montlouis
+<br />- mercredi 6 : Montlouis > selles sur cher
+<br />- jeudi 7 : selles sur cher > Vierzon
+<br />- vendredi 8 : Vierzon > Bourges
+<br />- samedi 9:  Bourges > Nevers
+<br />- dimanche 10 : Nevers > Gannay
+<br />- lundi 11: Gannay > paray le monial
+<br />- mardi 12 : Paray le monial > Beaujeu
+<br />- mercredi 13 : Beaujeu > Lyon
+    </Fragment>
+  </Hero2>

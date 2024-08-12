@@ -1,0 +1,72 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Itinéraire Marseille > Toulouse',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Soutenez le projet',
+          href: 'https://fr.tipeee.com/transiscapade',
+        },
+        {
+          variant: 'primary',
+          text: 'Vidéos',
+          href: 'https://www.youtube.com/@Transiscapade',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Itinéraire"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade' },
+      { target: '_blank', text: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105' },
+      { target: '_blank', text: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_1/' },
+      { target: '_blank', text: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/yannick-duthe-569a741b/' },
+    ]}
+    image={{ src: '~/assets/images/Marseille-Toulouse.jpeg', alt: 'Yannick sur son vhélio' }}
+  >
+    <Fragment slot="title">
+      Marseille > Toulouse
+    </Fragment>
+
+    <Fragment slot="subtitle">
+Lundi 1/04 - Marseille > Auriol [32 km]
+<br />- Mardi 2/04 - Aix-en-Provence [30 km]
+<br />- Mercredi 3/04 - Pélissanne [25 km]
+<br />- Jeudi 4/04 - Arles [54 km]
+<br />- Vendredi 5/04 - Saint-gilles [20 km]
+<br />- Samedi 6/04 > Dimanche 07/04 - Mudaison [39 km]
+<br />- Lundi 8/04 > Samedi 13/04 - Poussan [40 km] (Incluant une formation Process Work)
+<br />- Dimanche 14/04 > Lundi 15/04 - Agde / Cap d'Agde [30 km]
+<br />- Mardi 16/04 - Béziers [26 km]
+<br />- Mercredi 17/04 - Narbonne [35 km]
+<br />- Jeudi 18/04 - Sainte-Valière [26 km]
+<br />- Vendredi 19/04 - Palaja (Carcassonne) [51 km]
+<br />- Samedi 20/04 - Castelnaudary [46 km]
+<br />- Dimanche 21/04 - Vieillevigne [30 km]
+<br />- Lundi 22/04 - Toulouse [33 km]
+    </Fragment>
+  </Hero2>
