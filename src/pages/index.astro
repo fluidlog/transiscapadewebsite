@@ -11,6 +11,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { YouTube } from 'astro-embed';
 
 const metadata = {
   title: "Transiscapade, l'escapade au coeur de la transition",
@@ -20,6 +21,11 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
+
+  <div class="dark:text-emerald-900 md:hidden md:inline">
+    <YouTube id='kKWuj7OJzKk' params="autoplay:1"/>
+    =======================================
+  </div>
 
   <Hero
     actions={[
@@ -65,11 +71,22 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        Partons ensemble, découvrir les alternatives de notre territoire !
-        <br/><b>1ère escapade (mars > mai 2024) :</b> Le Mans>Lyon>Marseille>Toulouse>Bordeaux
-        <br/><b>2ème escapade (sept 2024) :</b> Lyon > Genève avec le Tour Alternatiba
-      </span>
+      <div class="dark:text-slate-200 hidden sm:inline">
+          <b>Découvrons ensemble les alternatives !</b>
+          =============================
+        <ul>
+          <li>
+            <br><b>1ère escapade (mars > mai 2024)<br/></b>Le Mans > Lyon > Marseille > Toulouse > Bordeaux > Tours > Le Mans
+          </li>
+          <li>
+            <br><b>2ème escapade (sept 2024)<br></b> Lyon > Genève avec le Tour Alternatiba
+          </li>
+        </ul>
+      </div>
+      <div class="dark:text-emerald-900 hidden sm:inline">
+        <YouTube id='kKWuj7OJzKk' params="autoplay:1"/>
+        =======================================
+      </div>
     </Fragment>
   </Hero>
 

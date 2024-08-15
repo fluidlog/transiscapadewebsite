@@ -86,7 +86,7 @@ export const headerData = {
       ],
     },
   ],
-  actions: [{ text: 'Vidéos', href: 'https://www.youtube.com/@Transiscapade', target: '_blank' }, 
+  actions: [{ text: 'Vidéos', variant: 'primary', href: 'https://www.youtube.com/@Transiscapade', target: '_blank' }, 
   { variant: 'primary', text: 'Soutenez le projet', href: 'https://fr.tipeee.com/transiscapade/', target: '_blank' }
 ],
 };
