@@ -10,6 +10,7 @@ import tasks from './src/utils/tasks';
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 import node from '@astrojs/node';
+import vercel from '@astrojs/vercel/serverless';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const whenExternalScripts = (items = []) =>
   ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown
@@ -26,7 +27,7 @@ export default defineConfig({
     host: true,
   },
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
-  output: 'static',
+  output: 'hybrid',
   integrations: [
     tailwind({
       applyBaseStyles: false,
@@ -72,7 +73,9 @@ export default defineConfig({
       },
     },
   },
-  adapter: node({
-    mode: 'standalone',
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
   }),
 });

@@ -56,11 +56,6 @@ apps:
       robots:
         index: false
 
-analytics:
-  vendors:
-    googleAnalytics:
-      id: "G-TP2F14Q6CH" # or "G-XXXXXXXXXX"
-
 ui:
   theme: 'dark:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
