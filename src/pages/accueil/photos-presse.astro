@@ -1,0 +1,75 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+import { Image } from 'astro:assets';
+import presse1 from '~/assets/images/presse1.jpg';
+import presse2 from '~/assets/images/presse2.jpg';
+import presse3 from '~/assets/images/presse3.jpg';
+import presse4 from '~/assets/images/presse4.jpg';
+import presse5 from '~/assets/images/presse5.jpg';
+import presse6 from '~/assets/images/presse6.jpg';
+import presse7 from '~/assets/images/presse7.jpg';
+import presse8 from '~/assets/images/presse8.jpg';
+
+const metadata = {
+  title: 'Presse',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Soutenez le projet',
+          href: 'https://fr.tipeee.com/transiscapade',
+        },
+        {
+          variant: 'primary',
+          text: 'Vidéos',
+          href: 'https://www.youtube.com/@Transiscapade',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Clic droit / Enregistrer l'image sous (2880 x 2510)..."
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade' },
+      { target: '_blank', text: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105' },
+      { target: '_blank', text: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_1/' },
+      { target: '_blank', text: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/104605394' },
+    ]}
+    image={{ src: '~/assets/images/presse1.jpg', alt: "Exemple de photo de presse" }}
+  >
+    <Fragment slot="title">
+      Photos de presse
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <Image src={presse1} alt="photo 1 pour la presse" width="56" height="44" />
+      <Image src={presse2} alt="photo 2 pour la presse" width="56" height="44" />
+      <Image src={presse3} alt="photo 3 pour la presse" width="56" height="44" />
+      <Image src={presse4} alt="photo 4 pour la presse" width="56" height="44" />
+      <Image src={presse5} alt="photo 5 pour la presse" width="56" height="44" />
+      <Image src={presse6} alt="photo 6 pour la presse" width="56" height="44" />
+      <Image src={presse7} alt="photo 7 pour la presse" width="56" height="44" />
+      <Image src={presse8} alt="photo 8 pour la presse" width="56" height="44" />
+    </Fragment>
+  </Hero2>

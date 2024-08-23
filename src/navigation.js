@@ -17,34 +17,34 @@ export const headerData = {
           text: 'Pourquoi ?',
           href: getPermalink('/accueil/pourquoi'),
         },
-        {
-          text: 'Presse',
-          href: getPermalink('/accueil/presse'),
-        },
       ],
     },
     {
       text: 'Itinéraires',
       links: [
         {
-          text: 'Le Mans > Lyon',
+          text: '#1 - Le Mans > Lyon',
           href: getPermalink('/itineraires/itineraire1'),
         },
         {
-          text: 'Lyon > Marseille',
+          text: '#1 - Lyon > Marseille',
           href: getPermalink('/itineraires/itineraire2'),
         },
         {
-          text: 'Marseille > Toulouse',
+          text: '#1 - Marseille > Toulouse',
           href: getPermalink('/itineraires/itineraire3'),
         },
         {
-          text: 'Toulouse > Bordeaux',
+          text: '#1 - Toulouse > Bordeaux',
           href: getPermalink('/itineraires/itineraire4'),
         },
         {
-          text: 'Bordeaux > Le Mans',
+          text: '#1 - Bordeaux > Le Mans',
           href: getPermalink('/itineraires/itineraire5'),
+        },
+        {
+          text: '#2 - Lyon > Genève',
+          href: getPermalink('/itineraires/itineraire6'),
         },
       ],
     },
@@ -52,36 +52,53 @@ export const headerData = {
       text: 'Blog',
       links: [
         {
-          text: 'Accueil',
+          text: '#1 - Accueil',
           href: getBlogPermalink(),
         },
         {
-          text: 'Naissance du projet',
+          text: '#1 - Naissance du projet',
           href: getPermalink('post-0', 'post'),
         },
         {
-          text: 'Financement participatif',
+          text: '#1 - Financement participatif',
           href: getPermalink('post-1', 'post'),
         },
         {
-          text: 'Préparation avant le départ',
+          text: '#1 - Préparation avant le départ',
           href: getPermalink('post-2', 'post'),
         },
         {
-          text: 'Le premier jour vers Ecommoy !',
+          text: '#1 - Le premier jour vers Ecommoy !',
           href: getPermalink('post-3', 'post'),
         },
         {
-          text: "Brass'vie à Jupilles !",
+          text: "#1 - Brass'vie à Jupilles !",
           href: getPermalink('post-4', 'post'),
         },
         {
-          text: "Inondations entre Jupilles et Tours !",
+          text: "#1 - Inondations entre Jupilles et Tours !",
           href: getPermalink('post-5', 'post'),
         },
         {
-          text: "Internet associatif à Tours !",
+          text: "#1 - Internet associatif à Tours !",
           href: getPermalink('post-6', 'post'),
+        },
+        {
+          text: "#1 - Résumé photo du Mans à Lyon",
+          href: getPermalink('post-7', 'post'),
+        },
+      ],
+    },
+    {
+      text: 'Presse',
+      links: [
+        {
+          text: 'Articles de presse',
+          href: getPermalink('/accueil/presse'),
+        },
+        {
+          text: "Photos pour la presse",
+          href: getPermalink('/accueil/photos-presse'),
         },
       ],
     },
