@@ -2,7 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Header from '~/components/widgets/Header.astro';
-import Hero2 from '~/components/widgets/Hero2.astro';
+import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Content from '~/components/widgets/Content.astro';
@@ -20,6 +20,9 @@ import presse5 from '~/assets/images/presse5.jpg';
 import presse6 from '~/assets/images/presse6.jpg';
 import presse7 from '~/assets/images/presse7.jpg';
 import presse8 from '~/assets/images/presse8.jpg';
+import presse9 from '~/assets/images/presse9.jpg';
+import presse10 from '~/assets/images/presse10.jpg';
+import presse11 from '~/assets/images/presse11.jpg';
 
 const metadata = {
   title: 'Presse',
@@ -48,28 +51,31 @@ const metadata = {
 
   <!-- Hero2 Widget ******************* -->
 
-  <Hero2
-    tagline="Clic droit / Enregistrer l'image sous (2880 x 2510)..."
-    actions={[
-      { variant: 'primary', target: '_blank', text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade' },
-      { target: '_blank', text: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105' },
-      { target: '_blank', text: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_1/' },
-      { target: '_blank', text: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/104605394' },
-    ]}
-    image={{ src: '~/assets/images/presse1.jpg', alt: "Exemple de photo de presse" }}
-  >
+  <Hero>
     <Fragment slot="title">
       Photos de presse
     </Fragment>
 
     <Fragment slot="subtitle">
-      <Image src={presse1} alt="photo 1 pour la presse" width="56" height="44" />
-      <Image src={presse2} alt="photo 2 pour la presse" width="56" height="44" />
-      <Image src={presse3} alt="photo 3 pour la presse" width="56" height="44" />
-      <Image src={presse4} alt="photo 4 pour la presse" width="56" height="44" />
-      <Image src={presse5} alt="photo 5 pour la presse" width="56" height="44" />
-      <Image src={presse6} alt="photo 6 pour la presse" width="56" height="44" />
-      <Image src={presse7} alt="photo 7 pour la presse" width="56" height="44" />
-      <Image src={presse8} alt="photo 8 pour la presse" width="56" height="44" />
+      <div class="dark:text-slate-200">
+          Les photos ci-dessous sont à votre disposition.
+          <br/><br/>Pour les récupérer :  
+          <br/><br/>Clic droit > Enregistrer sous...
+          <br/><br/>La taille est de : 2880 px x 2156 px
+      </div>
     </Fragment>
-  </Hero2>
+  </Hero>
+
+  <Image src={presse1} alt="photo 1 pour la presse" width="2880" height="2156" />
+  <Image src={presse2} alt="photo 2 pour la presse" width="2880" height="2156" />
+  <Image src={presse3} alt="photo 3 pour la presse" width="2880" height="2156" />
+  <Image src={presse4} alt="photo 4 pour la presse" width="2880" height="2156" />
+  <Image src={presse5} alt="photo 5 pour la presse" width="2880" height="2156" />
+  <Image src={presse6} alt="photo 6 pour la presse" width="2880" height="2156" />
+  <Image src={presse7} alt="photo 7 pour la presse" width="2880" height="2156" />
+  <Image src={presse8} alt="photo 8 pour la presse" width="2880" height="2156" />
+  <Image src={presse9} alt="photo 9 pour la presse" width="2880" height="2156" />
+  <Image src={presse10} alt="photo 10 pour la presse" width="2880" height="2156" />
+  <Image src={presse11} alt="photo 11 pour la presse" width="2880" height="2156" />
+
+</Layout>
