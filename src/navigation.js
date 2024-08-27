@@ -43,7 +43,7 @@ export const headerData = {
           href: getPermalink('/itineraires/itineraire5'),
         },
         {
-          text: '#2 - Lyon > Genève',
+          text: '#2 - Lyon > Genève > Chambéry',
           href: getPermalink('/itineraires/itineraire6'),
         },
       ],
