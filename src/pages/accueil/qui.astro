@@ -41,10 +41,11 @@ const metadata = {
   <Hero2
     tagline="Mon parcours"
     actions={[
-      { variant: 'primary', target: '_blank', text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade' },
-      { target: '_blank', text: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105' },
-      { target: '_blank', text: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_2/' },
-      { target: '_blank', text: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/104605394' },
+      { text: 'Soutenez', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade', target: '_blank' }, 
+      { icon: 'mage:facebook-circle', href: 'https://www.facebook.com/profile.php?id=61556861211105', target: '_blank' },
+      { icon: 'mage:linkedin', href: 'https://www.linkedin.com/company/104605394', target: '_blank' },
+      { icon: 'mage:instagram-circle', href: 'https://www.instagram.com/transiscapade_2/', target: '_blank' },
+      { icon: 'mage:tiktok-circle', href: 'https://www.linkedin.com/company/104605394', target: '_blank' },
     ]}
     image={{ src: '~/assets/images/qui.png', alt: 'Yannick Duthé et son vhélio' }}
   >
@@ -54,8 +55,8 @@ const metadata = {
 
     <Fragment slot="subtitle">
          Je m'appelle Yannick DUTHE, je suis un passionné de transition et je recherche l'autonomie (Habitat, alimentation, transport, monnaie...).
-         <br /> <br /> Je suis développeur web au sein de l'association Assemblée Virtuelle (AV), dont l'objectif est de cartographier la transition en utilisant un web plus standardisé, distribué (non centralisé), respectant les données personnelles.
+         <br /> <br /> Je suis développeur web au sein de l'association <b><a href='https://virtual-assembly.org'>Assemblée Virtuelle (AV)</a></b>, dont l'objectif est de <b>cartographier la transition</b> en utilisant un web plus standardisé, distribué (non centralisé), respectant les données personnelles.
          <br />Je porte aussi le projet "Archipelago 72", qui cartographie les alternatives en Sarthe en utilisant ces principes.
-         <br /> <br /> En 2023, j'ai eu la chance de pouvoir co-fabriquer mon vélo solaire, ce qui va me permettre d'aller visiter des lieux plus loin, plus sobrement, et toujours dans la joie !
+         <br /> <br /> En 2023, j'ai eu la chance de pouvoir co-fabriquer mon <b>vélo solaire</b>, ce qui va me permettre d'aller visiter des lieux plus loin, plus sobrement, et toujours dans la joie !
     </Fragment>
   </Hero2>

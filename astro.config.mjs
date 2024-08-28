@@ -37,6 +37,13 @@ export default defineConfig({
     icon({
       include: {
         tabler: ['*'],
+        'mage': [
+          'youtube',
+          'facebook-circle',
+          'linkedin',
+          'instagram-circle',
+          'tiktok-circle',
+        ],
         'flat-color-icons': [
           'template',
           'gallery',

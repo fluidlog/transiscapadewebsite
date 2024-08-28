@@ -152,11 +152,12 @@ export const footerData = {
     },
   ],
   socialLinks: [
-    { ariaLabel: 'youtube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@Transiscapade', target: '_blank' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61556861211105', target: '_blank' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/transiscapade_2/', target: '_blank' },
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/104605394', target: '_blank' },
     { ariaLabel: 'Financement participatif', icon: 'tabler:moneybag', href: 'https://fr.tipeee.com/transiscapade', target: '_blank' },
+    { ariaLabel: 'youtube', icon: 'mage:youtube', href: 'https://www.youtube.com/@Transiscapade', target: '_blank' },
+    { ariaLabel: 'Facebook', icon: 'mage:facebook-circle', href: 'https://www.facebook.com/profile.php?id=61556861211105', target: '_blank' },
+    { ariaLabel: 'LinkedIn', icon: 'mage:linkedin', href: 'https://www.linkedin.com/company/104605394', target: '_blank' },
+    { ariaLabel: 'Instagram', icon: 'mage:instagram-circle', href: 'https://www.instagram.com/transiscapade_2/', target: '_blank' },
+    { ariaLabel: 'TikTok', icon: 'mage:tiktok-circle', href: 'https://www.tiktok.com/@transiscapade', target: '_blank' },
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>

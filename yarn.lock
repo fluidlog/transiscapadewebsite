@@ -542,6 +542,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/mage@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@iconify-json/mage/-/mage-1.1.1.tgz"
+  integrity sha512-qyrVAvIH3C0iTRxxQ0QVL1F1or0N2nzMUNS0kccJASYGg+DEZXaFc0fN9iRhvp5E2p6jJXHcPq91J77cit/4vA==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/tabler@^1.1.100":
   version "1.1.103"
   resolved "https://registry.npmjs.org/@iconify-json/tabler/-/tabler-1.1.103.tgz"
