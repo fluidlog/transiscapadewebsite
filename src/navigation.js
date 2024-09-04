@@ -17,6 +17,10 @@ export const headerData = {
           text: 'Pourquoi ?',
           href: getPermalink('/accueil/pourquoi'),
         },
+        {
+          text: "Présentation (slide)",
+          href: getPermalink('/accueil/slide'),
+        },
       ],
     },
     {
@@ -84,7 +88,7 @@ export const headerData = {
           href: getPermalink('post-6', 'post'),
         },
         {
-          text: "#1 - Résumé photo du Mans à Lyon",
+          text: "#1 - Résumé photo du Mans à Marseille",
           href: getPermalink('post-7', 'post'),
         },
       ],
@@ -97,8 +101,16 @@ export const headerData = {
           href: getPermalink('/accueil/presse'),
         },
         {
-          text: "Photos pour la presse",
-          href: getPermalink('/accueil/photos-presse'),
+          text: "Photos 2880 x 2156",
+          href: getPermalink('/accueil/photos-grand-format'),
+        },
+        {
+          text: "Photos 720 x 539",
+          href: getPermalink('/accueil/photos-petit-format'),
+        },
+        {
+          text: "Présentation (slide)",
+          href: getPermalink('/accueil/slide'),
         },
       ],
     },

@@ -1,7 +1,7 @@
 ---
 publishDate: 2024-03-31T11:00:00
 author: Fluidlog
-title: Résumé photo transiscapade 1
+title: Résumé photo du Mans à Marseille
 excerpt: Ces 2 vidéos retracent en photo le voyage du Mans à Lyon puis de Lyon à Marseille
 image: 'https://www.transiscapa.de/_astro/Ep05-loire.DTlCVMrL_Z2mq2Wz.webp'
 tags:
@@ -9,15 +9,20 @@ tags:
   - Le Mans
   - Lyon
   - Voyage
-
 ---
 
 import { YouTube } from "astro-embed";
+import { Image } from 'astro:assets';
+import resume from '../../assets/images/résumé.png';
 
-## Pourquoi un résumé ?
+## Pourquoi un résumé photo ?
 Je dois être réaliste, je n'aurai pas le temps de rédiger le détail de tous les épisodes dans ce blog. A la place, voici une vidéo compilant les photos des moments qui resteront gravé dans ma mémoire.
 
 ## Vidéo résumé photo
+C'est un résumé du voyage sous forme d'une succession rapide de photos.
+
+Au début, je voulais faire la même chose en vidéo, mais ça aurait été un peu trop long. A voir, si je trouve le temps de faire mieux...
+
 Retrouvez sur [la chaine youtube de la transiscapade](https://www.youtube.com/@Transiscapade) :
 * [Le résumé photo du Mans à Lyon](https://www.youtube.com/watch?v=sgDKVQbA-rM)
 * [Le résumé photo de Lyon à Marseille](https://www.youtube.com/watch?v=ytJJjpm3dqQ)
@@ -25,3 +30,5 @@ Retrouvez sur [la chaine youtube de la transiscapade](https://www.youtube.com/@T
 <YouTube id='https://www.youtube.com/watch?v=sgDKVQbA-rM'/>
 
 <YouTube id='https://www.youtube.com/watch?v=ytJJjpm3dqQ'/>
+
+<Image src={resume} alt="photo 1 pour la presse" width="604" height="340" />

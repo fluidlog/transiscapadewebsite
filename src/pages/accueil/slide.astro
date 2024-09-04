@@ -1,0 +1,57 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+import { Image } from 'astro:assets';
+
+const metadata = {
+  title: 'Presentation - Slide',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Soutenez le projet',
+          href: 'https://fr.tipeee.com/transiscapade',
+        },
+        {
+          variant: 'primary',
+          text: 'Vidéos',
+          href: 'https://www.youtube.com/@Transiscapade',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero>
+    <Fragment slot="title">
+      Présentation (Slides)
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <div class="dark:text-slate-200">
+          Une présentation du projet vous attend en ligne ici :
+          <br/><br/><a href='https://pad.lescommuns.org/p/SlideTransiscapade#/'>[>>> Lien vers la présentation <<<]<a/>
+          <br/><br/>Elle contient des photos et du texte explicatif.
+      </div>
+    </Fragment>
+  </Hero>
+
+</Layout>
